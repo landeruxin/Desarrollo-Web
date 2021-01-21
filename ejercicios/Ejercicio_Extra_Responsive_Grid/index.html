@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="fotos/mundo.ico" type="image/ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>Ejercicio_extra</title>
+
+
+    <script>
+
+        function comprobacion(nom,tel,cor,men){
+            nombre(nom);
+            telef(tel);
+            correo(cor);
+            mensaje(men);
+            
+
+        }
+
+        function nombre(nom){  
+            var nombre=/^[A-z ]+$/;
+
+            if(!nombre.exec(nom)){
+                alert('El nombre que ha introducido no es válido');
+            }else if(nom=""){
+        alert("Debe de introducir un nombre");
+     }
+            }
+    
+            function telef(tel){  
+                var telefono = /^([0-9]+){9}$/;
+
+            if(!telefono.exec(tel)){
+                alert('El teléfono que ha introducido no es válido');
+            }else if(tel=""){
+        alert("Debe de introducir un teléfono");
+     }
+            }
+    
+    
+        
+
+        
+        function correo(cor){
+	correo=/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	if(!correo.exec(cor)){
+		alert('El email que ha introducido no es válido');
+	}else if(cor=""){
+        alert("Debe de introducir un correo");
+     }
+        }
+
+
+        function mensaje(men){
+
+            var mensaje = new RegExp("^[a-zA-Z ]+$");
+	if(!mensaje.exec(men)){
+		alert('El mensaje que ha introducido contiene caracteres especiales');
+	}else if(men=""){
+        alert("Debe de introducir algo en el mensaje");
+     }
+        }
+        
+    </script>
+</head>
+<body>
+    <div id="todo">
+    <div id="cabecera">
+        
+        <div id="prueba">
+
+        <a id="portfolio" href="#ancla1"  >Portfolio</a>
+        <a id="blog" href="#blog" >Blog</a>
+        <a id="contacto" href="#ancla2" >Contacto</a>
+    </div>
+        <div id="subcabecera">
+            <p id="nombre">Matilde Ramos</p>
+            <p id="curso" >Desarrollo de Aplicaciones Web</p>
+         </div>
+         <img src="fotos/persona.png" id="circular" alt="circular"/>
+    </div>
+
+    
+
+
+    <div id="texto">
+
+        <p id="titulo">Diseño web a medida</p>
+        <p id="subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptates? Modi, velit, voluptatibus dolor eum sunt voluptas dicta necessitatibus tenetur, culpa perspiciatis sapiente. Suscipit quia iure saepe hic esse corporis.</p>
+
+    </div>
+
+    <div id="portfolio">
+        <a name="Ancla" id="ancla1"></a>
+
+        <p id="texto_portfolio">Portfolio</p>
+
+            <div id="cajas">
+
+                <div class="fila">
+
+                        <div class="subfila">
+                
+
+                    <div class="caja1">
+
+                        
+
+                        <img src="fotos/foto1.png" class="foto" alt="foto1/">
+                        <p class="titulo">Trabajo realizado</p>
+                        <p class="subtitulo">Últimas tecnológicas</p>
+
+                    </div>
+
+                    <div class="caja1">
+
+                        <img src="fotos/foto2.png" class="foto" alt="foto2/">
+                        <p class="titulo">Trabajo realizado</p>
+                        <p class="subtitulo">Últimas tecnológicas</p>
+
+                    </div>
+                </div>
+
+                <div class="subfila">
+
+                    <div class="caja2">
+
+                        <img src="fotos/foto3.png" class="foto" alt="foto3/">
+                        <p class="titulo">Trabajo realizado</p>
+                        <p class="subtitulo">Últimas tecnológicas</p>
+
+                    </div>
+
+                    <div class="caja2">
+
+                        <img src="fotos/foto4.png" class="foto" alt="foto4/">
+                        <p class="titulo">Trabajo realizado</p>
+                        <p class="subtitulo">Últimas tecnológicas</p>
+
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="fila">
+
+                    <div class="subfila">
+
+                <div class="caja3">
+
+                    <img src="fotos/foto5.png" class="foto" alt="foto5/">
+                    <p class="titulo">Trabajo realizado</p>
+                    <p class="subtitulo">Últimas tecnológicas</p>
+
+                </div>
+
+                <div class="caja3">
+
+                    <img src="fotos/foto6.png" class="foto" alt="foto6/">
+                    <p class="titulo">Trabajo realizado</p>
+                    <p class="subtitulo">Últimas tecnológicas</p>
+
+                </div>
+
+            </div>
+
+            <div class="subfila">
+
+                <div class="caja4">
+
+                    <img src="fotos/foto7.png" class="foto" alt="foto7/">
+                    <p class="titulo">Trabajo realizado</p>
+                    <p class="subtitulo">Últimas tecnológicas</p>
+
+                </div>  
+
+                <div class="caja4">
+                
+                    <img src="fotos/foto8.png" class="foto" alt="foto8/">
+                    <p class="titulo">Trabajo realizado</p>
+                    <p class="subtitulo">Últimas tecnológicas</p>
+
+                </div>  
+
+            </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="contacto">
+            <a name="Ancla" id="ancla2"></a>
+
+        <p id="texto_contacto">Contacto</p>
+
+        <div id="tabla">
+
+        <form >
+           
+            <div class="fila">
+                
+                <div class="elemento" ><input id="nombre" type="text" name="nombre" placeholder="Nombre" > </div>
+                <div class="elemento" ><input id="telefono" type="text" name="telefono" placeholder="Teléfono" > </div>
+                <div class="elemento" ><input id="correo" type="text" name="correo" placeholder="Correo" > </div>
+            
+            </div>
+            
+            <textarea style="resize: none;"  name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" ></textarea>
+            
+            
+            <button type="submit" onClick="comprobacion(nombre.value,telefono.value,correo.value,mensaje.value);"><img src="fotos/mandar.png" alt="x" id="mandar"  /> Enviar formulario</button>
+            
+        </form>   
+
+        </div>
+
+    </div>
+
+    <div id="pie">
+
+        <p id="politica">Política de privacidad<br><br>Política de cookies</p>
+
+        <div id="logos">
+
+            <div id="logo1"> <a  href="https://es-es.facebook.com/" target="_blank"><img src="fotos/facebook.png" alt="" class="logo"></a></div>
+            <div id="logo2"> <a  href="https://twitter.com/?lang=es" target="_blank"><img src="fotos/twitter.png" alt="" class="logo"></a></div>
+            <div id="logo3"><a  href="https://www.instagram.com/" target="_blank"><img src="fotos/instagram.png" alt="" class="logo"></a></div>
+            <div id="logo4"><a  href="https://www.tiktok.com/es/" target="_blank"><img src="fotos/tiktok.png" alt="" class="logo"></a></div>
+            <div id="logo5"> <a  href="https://es.linkedin.com/" target="_blank"><img src="fotos/linkedin.png" alt="" class="logo"></a></div>
+
+            
+
+        </div>
+
+
+    </div>
+</div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 3.5 Formularios 2</title>
+</head>
+<body>
+        <p>Nombre: <input id="nombre" type="text" name="nombre"  > </p>
+        <p>Correo: <input id="email" type="text" name="correo"  > </p>
+        <p>URL: <input id="url" type="url" pattern="https://.*" name="url" placeholder="Escribe la URL de tu página"  > </p>
+        <p>Fecha: <input type="date"> </p>
+        <p>Tiempo: <input type="time"> </p>
+        <p>Fecha y hora: <input type="date"><input type="time" placeholder="UTC"></p>
+        <p>Mes: <input type="month"></p>
+        <p>Semana: <input type="week"></p>
+        <p>Número (min -10, max10): <input type="number" max="10" min="-10"></p>
+        <p>Teléfono: <input type="tel"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> </p>
+        <p>Término de busqueda: <input id="busqueda" type="search" name="busqueda"  > </p>
+        <p>Color favorito: <input type="color"></p>
+             <input type="submit" name="enviar" id="enviar" value="Enviar" >
+        </body>
+</html>

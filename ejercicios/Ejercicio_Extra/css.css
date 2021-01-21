@@ -1,0 +1,278 @@
+
+
+    div{
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+    }
+
+    div#cabecera{
+        
+        background-image: url(fotos/fondo.jpg);
+        background-repeat: no-repeat;
+        height: 35em;
+        background-size: 100% 100%;
+    }
+
+    a{
+        color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 170%;
+        position: absolute;
+        top:5%;
+    }
+
+    a#portfolio{
+        left: 20%;  
+    }
+
+    a#blog{
+        left: 27%;
+    }
+
+    a#contacto{
+        left: 31.5%;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    div#subcabecera{
+        color: aliceblue;
+        vertical-align: middle;
+        border: white 0.3em solid;
+        width: 20%;
+        position: absolute;
+        top: 20%;
+        left: 38%;
+    }
+
+    p{
+        
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    p#nombre{
+        font-size: 200%;
+
+        
+    }
+
+    p#curso{
+        font-size: 140%;
+    }
+
+    img#circular{
+        position: absolute;
+        top: 29em;
+        left:46%;
+        width: 9%;
+        height: 20%;
+        border-radius: 50%;
+    }
+
+    div#texto{
+        width: 40%;
+        position: absolute;
+        top:70%;
+        left: 28%;
+        color: blue;
+        font-size: 200%;
+
+    }
+
+    p#subtitulo{
+        font-size: 65%;
+    }
+
+    div#portfolio{
+        left: 0%;
+        position: absolute;
+        top:100%;
+        background-color: lightblue;
+    }
+
+
+
+    p#texto_portfolio{
+        margin-top: 2%;
+        
+        font-size: 200%;
+        
+        color: blue;
+    }
+
+
+
+    img.foto{
+        width: 99%;
+        height: 65%;
+    }
+
+    div#cajas{
+        
+        
+        border-spacing: 2em;
+        width: 50%;
+        margin-left: 25%;
+        
+        display: table;
+    }
+
+    div#cajas1 , div#cajas2{
+        display:table-row;
+        
+    }
+
+    div.caja{
+
+        background-color: aliceblue;
+        border: black 0.1em solid;
+        
+        width: 10%;
+        height: 20%;
+        display:table-cell;
+        text-align:center;
+        vertical-align: middle;
+        margin: 2em;
+        color: blue;
+    }
+
+    p.titulo{
+        font-size: 150%;
+    }
+
+    div#contacto{
+
+        width: 40%;
+        position: absolute;
+        top:198%;
+        left:20%;
+    }
+
+
+    p#texto_contacto{
+        font-size: 200%;
+        margin-left: 42%;
+        
+        color: blue;
+    }
+
+    div#tabla{
+        margin-left: 27%;
+        width: 40%;
+        border-spacing: 2em;
+        align-content: center;
+    }
+
+    div.fila{
+        display:table-row;
+    }
+
+    div.elemento{
+        width: 50%;
+        display: table-cell;
+        table-layout: auto;
+        border-color: blue;
+        color: blue;
+        margin: 2em;
+        
+    }
+
+    img:hover{
+        transform: scale(1.05);
+    }
+
+    img#circular{
+        transform: scale(1);
+    }
+
+    #logos img:hover{
+        transform: scale(2);
+    }
+
+    input{
+        color: blue;
+        color-adjust: blue;
+    }
+
+    textarea{
+        width: 194%;
+        margin-left: 10%;
+
+    }
+
+    ::placeholder{
+        color: blue;
+    }
+
+    button{
+        margin-left: 10%;
+        margin-top: 2%;
+        width: 196%;
+        height: 0.5%;
+        margin-bottom: 5%;
+        vertical-align: middle;
+        text-align: center;
+        
+        background-color: blue;
+        color: aliceblue;
+    }
+
+    img#mandar{
+        height: 1%;
+        width: 4%;
+        margin-right: 2%;
+        margin-left: -3%;
+    }
+
+    div#pie{
+        position: absolute;
+        top: 245%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        background-color: blue;
+
+    }
+
+    p#politica{
+        text-align: start;
+        margin-left: 32%;
+        color: aliceblue;
+        font-size: 120%;
+    }
+
+    div#logos{
+        
+        position: absolute;
+        left: 51%;
+
+    }
+
+
+
+    div#logos , img{
+        width: 1em;
+        height: 1em;
+        top:43%;
+    }
+
+    div#logo2{
+        position: absolute;
+        left: 250%;
+    }
+    div#logo3{
+        position: absolute;
+        left: 500%;
+    }
+    div#logo4{
+        position: absolute;
+        left: 750%;
+    }
+    div#logo5{
+        position: absolute;
+        left: 1000%;
+    }
+
+  
