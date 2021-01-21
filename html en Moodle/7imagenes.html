@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <title>Imágenes</title>
+</head>
+
+<body>
+    <h1>Las imágenes en HTML</h1>
+    <p>La etiqueta para poner una imagen en una página web es &lt;img src = "ruta de la imagen" /&gt;</p>
+    <p>Esta etiqueta es un elemento vacío, no contiene texto ni etiqueta de cierre</p>
+    <p>Tiene un atributo obligatorio src</p>
+    <p>El atributo src contiene la ruta dónde se encuentra la imagen</p>
+    <p>Esta ruta puede ser relativa o absoluta</p>
+    <p>El nombre de la imagen tiene que ir con su tipo de archivo</p>
+    <img src="fractal.jpg" />
+    <img src="img/fresap.jpg" />
+
+    <p>Es muy importante de cara al SEO ponerle a las imágenes un nombre descriptivo</p>
+    <p>La mayoría de las imágenes tienen derechos de autor</p>
+    <p>Solo debes mostrar imágenes tuyas, con permiso del autor o libres de derechos</p>
+
+    <p>Cada imagen que se añade a la web incrementa el peso de la misma y por tanto su tiempo de descarga</p>
+    <h2>El atributo alt</h2>
+    <p>Su valor debe ser una descripción de la imagen</p>
+    <p>Se utiliza como alternativa a la imagen, para cuando esta no pueda ser mostrada</p>
+    <p>Una imagen puede que no se muestre por diversos motivos:</p>
+    <ul>
+        <li>El usuario tiene discapacidad visual y utiliza un lector de pantalla</li>
+        <li>La ruta esté mal escrita</li>
+        <li>El navegador no muestra imágenes. Hay quien utiliza navegadores de solo texto (lynx)</li>
+        <li>Para los motores de búsqueda</li>
+        <li>Porque el usuario ha desactivado el uso de imágenes para ahorrar ancho de banda</li>
+    </ul>
+    <h2>Atributos width y height</h2>
+    <p>Se utilizan para especificar la anchura y altura en que se muestra la imagen</p>
+    <p>Es conveniente utilizar solo uno de los dos para no deformar la imagen</p>
+    <p>Si utilizamos solo uno, el otro lo calcula el navegador guardando la proporción</p>
+    <p>Se suele utilizar la anchura: width</p>
+    <img src="fractal.jpg" alt="Fractal" width="80" height="80">
+    <img src="fractal.jpg" alt="Fractal" width="80">
+    <h2>Atributo title</h2>
+    <p>Este atributo proporciona información de ayuda al parar el ratón sobre la imagen</p>
+    <img src="img/fresap.jpg" alt="Fresa" title="Fresa de muestra">
+
+    <!-- Realizar algunos ejercicios con imagenes que esten en distintas carpetas
+    para practicar con las rutas relativas -->
+
+    <h2>Generador de imágenes de muestra</h2>
+    <p>lorempixel.com es un generador de imágenes para desarrollos web</p>
+    <p>Ejemplo de imagen de 400 x 200 píxeles</p>
+    <!-- <img src="http://lorempixel.com/400/200/" alt="Imagen de lorempixel"> -->
+
+    <h2>Imagen como enlace</h2>
+    <p>Podemos crear un enlace que sea una imagen</p>
+    <p>Como ejemplo vamos a mostrar una imagen que sea un enlace a google.com</p>
+    <a href="http://www.google.com">
+        <img src="fractal.jpg" alt="Enlace a google" title="Enlace a google" width="200">
+    </a>
+
+    <h2>Los elementos figure y figcaption</h2>
+    <p>El elemento figure representa un contenido independiente.</p>
+    <p>Generalemente es una imagen, un diagrama, un fragmento de código...</p>
+    <p>El elemento figcaption representa un subtítulo o leyenda asociado al elemento padre figure</p>
+    <p>El elemento figcaption puede ir como primer o último hijo de figure</p>
+    <p>Ejemplo de una imagen con figure y figcaption</p>
+    <figure>
+        <img src="img/fresap.jpg" alt="Fresa" title="Fresa de muestra">
+        <figcaption>Imagen libre de derechos</figcaption>
+    </figure>
+    <p>El elemento figcaption vincula semánticamente el texto que contiene con el elemento contenido en figure</p>
+
+    <h2>Imágenes de fondo</h2>
+    <p>Se pueden colocar imágenes de fondo utilizando css con la propiedad background-image</p>
+    <p>Las imágenes de fondo las veremos en CSS</p>
+    <h2>imagen HTML vs background-image</h2>
+    <p>Si una imagen tiene significado para el contenido de la página se debe usar HTML</p>
+    <p>Si la imagen solo es decorativa se debe utilizar una imagen de fondo css</p>
+    <h2>Favicon</h2>
+    <p>El favicon es el icono que aparece en la pestaña del navegador o en la lista de marcadores.</p>
+    <p>El favicon es una imagen de tamaño reducido (16x16 px) y formato .ico</p>
+    <p>Algunos navegadores admiten formato PNG y Firefox admite SVG</p>
+    <p>La etiqueta para el favicon se pone dentro del head con una etiqueta link y los siguientes atributos:</p>
+    <ul>
+        <li>rel = "icon"</li>
+        <li>type="image/tipo de imagen"</li>
+        <li>href="ruta a la imagen"</li>
+    </ul>
+    <p>Si se incluye un archivo favicon.ico en la carpeta raiz del sitio web, los navegadores utilizan automáticamente esa imagen como favicon de todas las páginas del sitio sin que sea necesario incluir la etiqueta link</p>
+    <p>La etiqueta link es necesaria si se quieren utilizar otros formatos de imagen, guardarlo en otras carpetas o utilizar diferentes favicon para diferentes páginas</p>
+    <p>Con la utilización de navegadores móviles se ha complicado un poco el uso del favicon</p>
+    <p>Si queremos incluir en una web todos los tamaños de imágenes y las etiquetas requeridas por los diferentes navegadores, lo más fácil es utilizar algún generador como:</p>
+    <p><a href="https://realfavicongenerator.net/">realfavicongenerator</a></p>
+</body>
+
+</html>

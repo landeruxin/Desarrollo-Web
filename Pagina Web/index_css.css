@@ -1,0 +1,200 @@
+@media only screen and (min-width: 1000px) {
+       
+
+    div{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    div#cabecera{
+        background-image: url(Fotos/mar.jpg);
+        background-repeat: no-repeat;
+        height: 27em;
+        background-size: 100% 100%;
+    }
+
+    audio{
+        position: absolute;
+        top: 30%;
+        left: 75%;
+    }
+
+    audio:hover{
+        transform: scale(1.05);
+    }
+
+    img:hover{
+        transform: scale(1.1); /*movimiento imagen*/
+
+    }
+
+    img{
+        width: 12%;
+        height:50%;
+    }
+
+    img#logo{
+        width:12em;
+        height: 10em;
+        position: absolute;
+        top: 2em; left: 2em;
+    }
+    a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 170%;
+        position: absolute;
+        top:1em;
+    }
+
+    a#bar{
+
+        position: absolute;
+        left: 75%;
+
+    }
+    a#hotel{
+
+        position: absolute;
+        left: 80%;
+
+    }
+    a#pueblo{
+
+        position: absolute;
+        left: 86%;
+
+    }
+
+    div#subcabecera{
+        background: linear-gradient(to bottom, rgb(214, 214, 224), rgba(255, 255, 255, 0));
+        position: absolute;
+        top: 17%;
+        left: 37%;
+        
+        width: 15%;
+        height: 12%;
+        
+        border: black 0.2em solid;
+
+    }
+
+    p{
+        text-align: center;
+        
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 180%;
+    }
+
+    h1{
+        text-align: center;
+
+    }
+
+    p#frase{
+        height: 10%;
+        max-lines: 2;
+
+    }
+
+    p#subtitulo{
+        position: relative;
+        left: 5%;
+    }
+
+    img#circular{
+        
+        position: absolute;
+        top: 34%;
+        left:45%;
+        width: 10%;
+        height: 20%;
+        border-radius: 50%;
+    }
+
+    div#texto{
+        
+        position: absolute;
+        top:55%;
+        
+        
+
+    }
+
+    p#subtitulo{
+        width: 90%
+    }
+
+    div#galeria{
+        background: linear-gradient(to bottom, rgba(228, 228, 231, 0), rgba(20, 110, 226, 0.753));
+        
+        width: 90%;
+        height: 29%;
+        position: absolute;
+        top:70%;
+    }
+
+    p#texto_galeria{
+        
+        font-size: 250%;
+    }
+
+    div#galeria img{
+
+        vertical-align: middle;
+        position: absolute;
+
+    }
+
+    img#foto1{
+        left: 6.5%;
+    }
+
+    img#foto2{
+        left: 25%;
+    }
+
+    img#foto3{
+        left: 43.5%;
+    }
+
+    img#foto4{
+        left: 62%;
+    }
+
+    img#foto5{
+        left: 80.5%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+       
+
+    div{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    div#cabecera{
+        background-image: url(Fotos/mar.jpg);
+        background-repeat: no-repeat;
+        height: 12em;
+        background-size: 100% 100%;
+    }
+
+    
+
+    img{
+        width: 12%;
+        height:50%;
+    }
+
+    img#logo{
+        width:6em;
+        height: 5em;
+        position: absolute;
+        top: 1em; left: 1em;
+    }
+
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <!-- Las listas en HTML nos permiten crear un conjunto de elementos en forma de lista 
+    Cada elemento va precedido por defecto por un guión o número 
+    Tipos de listas:
+        Listas ordenadas
+        Listas desordenadas
+        Listas de definiciones -->
+
+    <!-- Cada elemento de una lista puede ser un texto, un enlace, una imagen... -->
+
+    <h2>Listas Ordenadas</h2>
+    <p>Son aquellas que nos muestran los elementos de la lista en orden</p>
+    <p>Sus elementos van precedidos de números o letras</p>
+    <p>Los elementos de las listas ordenadas van entre las etiquetas &lt;ol&gt; y &lt;&#47;ol&gt;</p>
+    <p>Cada uno de los elementos va entre las etiquetas &lt;li&gt; y &lt;&#47;li&gt;</p>
+    <ol>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+        <li>.....</li>
+    </ol>
+
+    <p>Podemos cambiar el número de inicio de una lista con el atributo start</p>
+    <ol start="3">
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+        <li>.....</li>
+    </ol>
+
+    <p>Podemos invertir el orden de la lista con el atributo reversed</p>
+    <ol reversed>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+        <li>.....</li>
+    </ol>
+
+    <h2>Listas desordenadas</h2>
+    <p>Nos sirven para mostrar elementos sin ningún orden, precedidos por una viñeta</p>
+    <p>Los elementos de las listas desordenadas van entre las etiquetas &lt;ul&gt; y &lt;&#47;ul&gt;</p>
+    <ul>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+        <li>.....</li>
+    </ul>
+
+    <!-- Cuando aprendamos css podremos hacer muchas cosas con las listas 
+        Cambiar la viñeta que tienen por defecto por otra o quitarla
+        Los menús de navegación suelen hacerse con listas -->
+
+    <h2>Listas de definiciones</h2>
+    <p>Sirven para montar listas con la estructura valor y definición</p>
+    <p>Los elementos de las listas de definiciones van entre las etiquetas &lt;dl&gt; y &lt;&#47;dl&gt;</p>
+    <p>Los elementos van entre las etiquetas dt para el valor y dd para la definición</p>
+    <dl>
+        <dt>Término 1</dt>
+        <dd>Definición 1</dd>
+        <dt>Término 2</dt>
+        <dd>Definición 2</dd>
+        <dt>Término 3</dt>
+        <dd>Definición 3</dd>
+    </dl>
+
+    <h2>Listas anidadas</h2>
+    <p>Podemos hacer que el elemento de una lista sea otra lista cuyos elementos sean otras listas</p>
+    <p>Las anidaciones pueden ser de cualquier tipo de lista, sin límite de anidación</p>
+    <ul>
+        <li>Carnívoro
+            <ul>
+                <li>Tigre</li>
+                <li>Pantera</li>
+                <li>Cocodrilo</li>
+            </ul>
+        </li>
+        <li>Herbívoro
+            <ul>
+                <li>Oveja</li>
+                <li>Vaca</li>
+            </ul>
+        </li>
+        <li>Omnívoro
+            <ul>
+                <li>Oso</li>
+                <li>Gallina</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>

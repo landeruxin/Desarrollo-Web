@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <h1>Tablas</h1>
+    <p>Una tabla es un conjunto estructurado de datos organizados en filas y columnas</p>
+    <p>Los elementos básicos de una tabla son tres</p>
+    <dl>
+        <dt>&lt;table&gt;</dt>
+        <dd>Contenedor principal</dd>
+        <dt>&lt;tr&gt;</dt>
+        <dd>Filas. (table row) Las filas contienen las celdas</dd>
+        <dt>&lt;td&gt;</dt>
+        <dd>Celdas (table date)</dd>
+    </dl>
+    <table>
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+        <tr>
+            <td>Celda 4</td>
+            <td>Celda 5</td>
+            <td>Celda 6</td>
+        </tr>
+    </table>
+    <p>Para ver mejor la estructura de la tabla vamos a aplicarle un borde</p>
+    <!-- Aplicar estilo a la tabla así, aunque funcione, no es una buena práctica
+    Los estilos se han de aplicar con reglas css -->
+    <table border="1">
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+        <tr>
+            <td>Celda 4</td>
+            <td>Celda 5</td>
+            <td>Celda 6</td>
+        </tr>
+    </table>
+    <h2>Celdas de encabezado</h2>
+    <p>Se puede crear una fila superior de encabezado con la etiqueta th (table head)</p>
+    <p>Cada celda de encabezado describe la información del resto de las celdas de la columna a la que pertenece</p>
+
+    <table border="1">
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+        </tr>
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+        <tr>
+            <td>Celda 4</td>
+            <td>Celda 5</td>
+            <td>Celda 6</td>
+        </tr>
+    </table>
+    <h2>El atributo scope</h2>
+    <p>Sirve para indicar explícitamente a qué celdas afecta una celda de encabezado</p>
+    <p>Solo puede ser declarado en una celda de encabezado</p>
+    <p>Puede tomar los valores col, row, colgroup y rowgroup</p>
+    <p>col y row indican que la celda de encabezado muestra información con respecto al resto de las celdas en la fila o columna en que aparece
+    </p>
+    <table border="1">
+        <tr>
+            <th scope="row">Planetas</th>
+            <th>Diámetro (Km)</th>
+            <th>Distancia del sol (10<sup>6</sup>Km)</th>
+            <th>Temperatura media (ºC)</th>
+        </tr>
+        <tr>
+            <th>Mercurio</th>
+            <td>4.879</td>
+            <td>57,9</td>
+            <td>167</td>
+        </tr>
+        <tr>
+            <th>Venus</th>
+            <td>12.104</td>
+            <td>108,2</td>
+            <td>464</td>
+        </tr>
+        <tr>
+            <th>La Tierra</th>
+            <td>12.756</td>
+            <td>149,6</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+    <!-- Añade una columna con el número de lunas de cada planeta (0,0,1) -->
+    <h2>Elemento caption</h2>
+    <p>Inserta un título para la tabla</p>
+    <p>El título agrega información sobre la tabla</p>
+    <p>Se inserta justo después del elemento table</p>
+    <table border="1">
+        <caption>Planetas del sistema solar</caption>
+        <tr>
+            <th scope="row">Planetas</th>
+            <th>Diámetro (Km)</th>
+            <th>Distancia del sol (10<sup>6</sup>Km)</th>
+            <th>Temperatura media (ºC)</th>
+        </tr>
+        <tr>
+            <th>Mercurio</th>
+            <td>4.879</td>
+            <td>57,9</td>
+            <td>167</td>
+        </tr>
+        <tr>
+            <th>Venus</th>
+            <td>12.104</td>
+            <td>108,2</td>
+            <td>464</td>
+        </tr>
+        <tr>
+            <th>La Tierra</th>
+            <td>12.756</td>
+            <td>149,6</td>
+            <td>15</td>
+        </tr>
+    </table>
+    <h2>Atributos colspan y rowspan</h2>
+    <p>Se utilizan para unir dos o más celdas</p>
+    <p>colspan une celdas de distintas columnas</p>
+    <p>rowspan une celdas de distintas filas</p>
+    <table border="1">
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+        <tr>
+            <td colspan="2">Celda 4 y 5</td>
+            <td>Celda 6</td>
+        </tr>
+        <tr>
+            <td>Celda 7</td>
+            <td>Celda 8</td>
+            <td>Celda 9</td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Celda 4 y 7</td>
+            <td>Celda 5</td>
+            <td>Celda 6</td>
+        </tr>
+        <tr>
+            <td>Celda 8</td>
+            <td>Celda 9</td>
+        </tr>
+    </table>
+    <h2>Elementos thead, tfoot y tbody</h2>
+    <p>Sirven para dar estructura a una tabla marcando un encabezado, un pie de página y una sección del cuerpo de la tabla</p>
+    <dl>
+        <dt>thead</dt>
+        <dd>Sirve para agrupar las filas de un encabezado</dd>
+        <dt>tfoot</dt>
+        <dd>Sirve para contener las filas que representan un pie o resumen</dd>
+        <dt>tbody</dt>
+        <dd>Representa un bloque de filas que consiste en un cuerpo de datos</dd>
+    </dl>
+
+    <p>Vamos a ver una tabla que representa las ventas por trimestres de tres tiendas</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th colspan="2">Tienda 1</th>
+                <th colspan="2">Tienda 2</th>
+            </tr>
+            <tr>
+                <th scope="col">Fecha</th>
+                <th>Ventas</th>
+                <th>Gastos</th>
+                <th>Ventas</th>
+                <th>Gastos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Trimestre 1</th>
+                <td>200</td>
+                <td>50</td>
+                <td>350</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <th>Trimestre 2</th>
+                <td>225</td>
+                <td>50</td>
+                <td>450</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <th>Trimestre 3</th>
+                <td>150</td>
+                <td>30</td>
+                <td>200</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <th>Trimestre 4</th>
+                <td>500</td>
+                <td>100</td>
+                <td>400</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Saldos</th>
+                <td colspan="2">845</td>
+                <td colspan="2">1115</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+<h2>Tablas anidadas</h2>
+<p>Consiste en incluir una tabla completa dentro de otra</p>
+<table border="1">
+    <tr>
+        <th>título1</th>
+        <th>título2</th>
+        <th>título3</th>
+    </tr>
+    <tr>
+        <td>
+            <table border="1">
+                <tr>
+                    <td>celda1</td>
+                    <td>celda2</td>
+                    <td>celda3</td>
+                </tr>
+            </table>
+        </td>
+        <td>celda2</td>
+        <td>celda3</td>
+    </tr>
+    <tr>
+        <td>celda4</td>
+        <td>celda5</td>
+        <td>celda6</td>
+    </tr>
+</table>
+<p>Por lo general no es recomendable anidar tablas, salvo en casos muy concretos, porque el resultado es muy confuso y poco accesible para los lectores de pantalla
+</p>
+
+</html>
