@@ -1,0 +1,27 @@
+#nombre{
+    text-align: center;
+    font-size: 2vw;
+}
+
+table{
+    margin: auto;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+td,th{
+    width: 11vw;
+}
+
+#botones{
+    width: 100%;
+}
+
+button{
+    width: 15vw;
+    font-size: 1.3vw;
+    position: relative;
+    margin: 1vw;
+    top: 4vw;
+    left:32vw;
+}

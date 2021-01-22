@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="broker.js"> </script>
+    
+    <link rel="stylesheet" type="text/css" href="broker.css">
+    <title>Juego broker</title>
+</head>
+<body onload="inicio()" >
+    <div id=nombre>
+
+    </div>
+
+
+        <table>
+
+            <tr>
+                
+                <th>Capital</th>
+                <th>Valor acción</th>
+                <th>Acciones</th>
+                <th>Valor acciones</th>
+                <th>Cambio acción</th>
+
+
+            </tr>
+                <td id="v1" ></td>
+                <td id="v2"></td>
+                <td id="v3"></td>
+                <td id="v4"></td>
+                <td id="v5"></td>
+
+
+
+        </table>
+
+    <div id="botones">
+        
+            <button id="comprar" type="submit" onclick="comprar(v1.value,v2.value,v3.value,v4.value)"> Comprar 1 acción</button>
+            <button id="vender" type="submit" onclick="vender(v1.value,v2.value,v3.value,v3.value)"> Vender 1 acción</button>
+
+            
+    </div>
+</body>
+</html>
