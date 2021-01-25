@@ -10,7 +10,10 @@
     <title>Juego broker</title>
 </head>
 <body onload="inicio()" >
-    <div id=nombre>
+
+    <div id="fin"></div>
+    <div id="todo">
+    <div id="nombre">
 
     </div>
 
@@ -20,18 +23,18 @@
             <tr>
                 
                 <th>Capital</th>
-                <th>Valor acción</th>
-                <th>Acciones</th>
-                <th>Valor acciones</th>
+                <th>Precio unitario acción</th>
+                <th>Numero de Acciones</th>
+                <th>Valor en acciones</th>
                 <th>Cambio acción</th>
 
 
             </tr>
-                <td id="v1" ></td>
-                <td id="v2"></td>
-                <td id="v3"></td>
-                <td id="v4"></td>
-                <td id="v5"></td>
+                <td id="capital" ></td>
+                <td id="precio"></td>
+                <td id="accion"></td>
+                <td id="valor"></td>
+                <td id="cambio"></td>
 
 
 
@@ -39,10 +42,14 @@
 
     <div id="botones">
         
-            <button id="comprar" type="submit" onclick="comprar(v1.value,v2.value,v3.value,v4.value)"> Comprar 1 acción</button>
-            <button id="vender" type="submit" onclick="vender(v1.value,v2.value,v3.value,v3.value)"> Vender 1 acción</button>
+            <button id="comprar" type="submit" onclick="comprar()"> Comprar 1 acción</button>
+            <button id="vender" type="submit" onclick="vender()"> Vender 1 acción</button>
 
             
     </div>
+
+</div>
+
+
 </body>
 </html>

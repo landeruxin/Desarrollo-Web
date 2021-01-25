@@ -1,4 +1,4 @@
-#nombre{
+#todo , #fin{
     text-align: center;
     font-size: 2vw;
 }
@@ -10,7 +10,8 @@ table{
 }
 
 td,th{
-    width: 11vw;
+    width: 16vw;
+    padding-bottom: 2vw;
 }
 
 #botones{
@@ -23,5 +24,19 @@ button{
     position: relative;
     margin: 1vw;
     top: 4vw;
-    left:32vw;
+}
+
+.cambio{
+    width: 3vw;
+    height: 3vw;
+    
+    display:block;
+    margin:auto;
+}
+
+#copa{
+        display:block;
+        margin:auto;
+        width: 20%;
+        height: 20%;        
 }
