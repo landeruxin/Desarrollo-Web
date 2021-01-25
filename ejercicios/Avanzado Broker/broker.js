@@ -8,8 +8,11 @@
 
     var total;
 
+    var intervalo;
 
     var precio_viejo;
+
+    var nombre;
     
 
 
@@ -17,16 +20,21 @@
     
 
 function inicio(){
+    
+    
+    document.getElementById('todo').style.display = 'none'; 
 
     setTimeout(function(){fin()},30000)
 
     empezarAleatorio();
     
-    var nombre = prompt("Bienvenido al juego, recuerde que la duración de este es de 10 segundos. \n\nIntroduzca su nombre:");
+    nombre = prompt("Bienvenido al juego, recuerde que la duración de este es de 10 segundos. \n\nIntroduzca su nombre:");
 
     var frase = "Jugador: "+nombre;
 
     document.getElementById('nombre').innerHTML='<p>'+frase+'</p>';    
+
+    document.getElementById('todo').style.display = 'block'; 
 
 }
 
@@ -45,7 +53,7 @@ function reinicio(){
 
 function empezarAleatorio(){
     	
-        setInterval(function(){random1()},1000); 
+       intervalo =  setInterval(function(){random1()},1000); 
     	
     }
 
@@ -136,6 +144,8 @@ function pintar_resultado(precio){
 }
 
 function fin(){
+
+    clearInterval(intervalo);
     
     
 
@@ -146,19 +156,24 @@ function fin(){
     
     
 
-    var frase1 = "Felicidades, ha batido el recor con un total de "+total+" euros.";
-    var frase2 = "La suma de su capital y el valor en acciones es de: "+total+" euros.";
+    var frase1 = "Felicidades "+nombre+", ha batido el recor con un total de "+total+" euros.";
+    var frase2 = nombre+", la suma de su capital y el valor en acciones es de: "+total+" euros.";
+    var frase2 = nombre+", ha coseguido el mismo resultado que el record de"+localStorage.getItem("Nombre")+", que son "+total+" euros.\n Por valorar la antigüedad, "+localStorage.getItem("Nombre")+" mantendrá el record.";
 
 
     if(total > localStorage.getItem("Record")){      
         
         
-        document.getElementById('fin').innerHTML='<p>'+frase1+'</p><br><br><img id="copa" src="copa.png"><br><br><button id="repetir" type="submit" onclick="repetir()"> Repetir </button> <button id="salir" type="submit" onclick="salir()"> Salir </button>';
+        document.getElementById('fin').innerHTML='<p>'+frase1+'</p><br><br><img id="copa" src="copa.png"><br><button id="repetir" type="submit" onclick="repetir()"> Repetir </button> <button id="salir" type="submit" onclick="salir()"> Salir </button>';
    
         localStorage.setItem("Record", total);
-    }else{
+        localStorage.setItem("Nombre",nombre);
+    }else if(total == localStorage.getItem("Record")){
         
-        document.getElementById('fin').innerHTML='<p>'+frase2+'</p><br><br><button id="repetir" type="submit" onclick="repetir()"> Repetir </button> <button id="salir" type="submit" onclick="salir()"> Salir </button>';
+        document.getElementById('fin').innerHTML='<p>'+frase2+'</p><br><p id="record">Record: '+localStorage.getItem("Nombre")+' - Puntos: '+localStorage.getItem("Record")+'</p><br><button id="repetir" type="submit" onclick="repetir()"> Repetir </button> <button id="salir" type="submit" onclick="salir()"> Salir </button>';
+   }else{
+        
+        document.getElementById('fin').innerHTML='<p>'+frase2+'</p><br><p id="record">Record: '+localStorage.getItem("Nombre")+' - Puntos: '+localStorage.getItem("Record")+'</p><br><button id="repetir" type="submit" onclick="repetir()"> Repetir </button> <button id="salir" type="submit" onclick="salir()"> Salir </button>';
     }
 
     
@@ -169,6 +184,8 @@ function repetir(){
     document.getElementById('fin').innerHTML=''; 
     document.getElementById('todo').style.display = 'block';  
     capital = 1000;
+    precio = 100;
+    pintar_resultado();
     reinicio();
 }
 

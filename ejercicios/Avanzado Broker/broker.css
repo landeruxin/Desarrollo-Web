@@ -40,3 +40,7 @@ button{
         width: 20%;
         height: 20%;        
 }
+
+#record{
+    font-weight: bold;
+}
