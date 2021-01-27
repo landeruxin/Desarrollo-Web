@@ -1,0 +1,1232 @@
+
+/* EL ARCHIVO CSS ES BASTANTE LIOSO, YA QUE EN UN PRINCIPIO REALICÉ EL DISEÑO SIN SER RESPONSIVE Y APORTANDO VALORES FIJOS (PX).  */
+
+div{
+    width: 100%;
+    max-width: 900px;
+    margin:auto;
+}
+
+#cabecera1{
+    background-color: black;
+    height: 220px;
+    border-bottom: 2px solid red;
+}
+
+#cabecera{
+    background-color: black;
+    height: 220px;
+}
+
+/* ESCONDO LA TABLA VERTICAL */
+#galeria2{
+    display: none;
+}
+
+#enlaces{
+    position: relative;
+    left: 680px;
+    display: flex;
+    flex-direction: column;
+    height:140px;
+
+    top: -99px;
+    font-family: Verdana,  sans-serif;
+    font-size: 12px;
+    color: white;
+    
+
+}
+
+#origami{
+    position: relative;
+    height: 160px;
+    width: 600px;
+    top: 40px;
+    left: 30px;
+}
+
+.contenido{
+    padding-top:4px;
+    width: 120px;
+    height: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    
+    text-decoration: none;
+}
+
+.contenido:hover{
+    color:red;
+    transform: scale(1.1);
+    
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+.titular{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+    font-weight: bold ;
+    letter-spacing: 0.5px;
+}
+
+.subtitular{
+    
+    font-family: 'Orbitron', sans-serif;
+    color: red;
+    
+    letter-spacing: 0.5px;
+    font-weight: bold ;
+}
+
+.texto, label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+#introduccion{
+    position: relative;
+    top: -25px;
+    height: 220px;
+    
+    background-color: rgba(128, 128, 128, 0.623);
+    border-bottom: 2px solid red;
+}
+
+#introduccion img{
+    position: relative;
+    left: 10px;
+    height: 115px;
+    width: 115px;
+}
+
+#introduccion .titular{
+    position: relative;
+    top: 20px;
+    left:20px;
+}
+
+#introduccion .subtitular{
+    position: relative;
+    left:20px;
+}
+
+#texto1{
+    position: relative;
+    left:50px;
+    top: -120px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+#noticias{
+    display: flex;
+}
+
+#bloque1{
+    margin-left:10px;
+    width: 450px;
+    position: relative;
+    top: -50px;
+    margin-right: 20px;
+}
+
+#bloque2{
+    
+    width: 450px;    
+    position: relative;
+    top: -20px;
+    margin-left:20px;
+}
+
+
+#bloque1 .subtitular{
+    position: relative;
+    width: 300px;
+}
+
+
+#bloque1 .texto{
+    width: 385px;
+}
+
+#bloque2 .subtitular{
+    position: relative;
+    width: 300px;
+}
+
+#bloque2 .texto{
+
+    width: 380px;
+}
+
+
+span{
+    font-weight: bold;
+}
+
+.float{
+    float: left; 
+    margin-right: 5px;   
+}
+
+#bloque1 .float{
+    height: 120px;
+    width: 190px;
+}
+
+#bloque2 .float{
+    height: 140px;
+    width: 120px;
+    
+    margin-right: 10px;
+}
+
+#pie{
+    
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#rojo{
+    color: red;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#galeria .titular{
+    position: relative;
+    top: 15px;
+    left:20px;
+}
+
+#galeria .subtitular{
+    position: relative;
+    top:-5px;
+    left:20px;
+}
+
+table{
+    position: relative;
+    left:20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+table img{
+    width: 130px;
+    height: 130px;
+}
+
+caption{
+    background-color: rgba(128, 128, 128, 0.623);
+    font-weight: bold;
+    padding-top:3px;
+    padding-bottom: 3px;
+    margin-left:2px;
+    margin-right: 2px;
+}
+
+#contacto .titular{
+    position: relative;
+    top: 15px;
+    left:20px;
+}
+
+#contacto .subtitular{
+    position: relative;
+    top:-5px;
+    left:20px;
+}
+
+#contacto .texto{
+    position: relative;
+    top:-3px;
+    left:20px;
+
+}
+
+#formulario {
+
+    width: 740px;
+    height: 410px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(128, 128, 128, 0.623);
+    margin-bottom: 25px;
+    border: 1px solid black;
+
+}
+
+form{
+    width: 740px;
+    height: 410px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    
+
+}
+
+#contacto img{
+    position: relative;
+    top: 10px;
+    left: 600px;
+
+    width: 130px;
+    height: 100px;
+}
+
+#formulario .texto, label{
+    font-weight: bold;
+    
+    width: 170px;
+}
+.radio{
+    margin-left:20px;
+}
+
+#parte1{
+    width: 170px;
+    position: relative;
+    left: -80px;
+    top:-60px;
+}
+#parte2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -70px;
+    top:-40px;
+}
+
+#elemento1{
+    margin-bottom: 5px;
+}
+
+
+#selector{
+    width: 100px;
+    position: relative;
+    top:  59px;
+    margin-bottom: 5px;
+}
+
+textarea{
+    position: relative;
+    top: 65px;
+    width: 410px; 
+    height: 150px;
+}
+
+#boton{
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    border: 2px solid black;
+    position: relative;
+    left: 20px;
+    top: 135px;
+}
+
+
+
+#rojo:hover{
+    font-weight: bold;
+}
+
+
+/* EMPIEZA EL RESPONSIVE!!!!!! */
+/* EN ESTA PARTE HE PASADO TODOS LOS VALROES PX A VW PARA QUE SEA UNA MEDIDA PROPORCIONAL */
+
+@media (max-width: 900px) {
+
+
+    div{
+        width: 98vw;
+        margin: auto;
+    }
+    
+    #cabecera1{
+        background-color: black;
+        height: 24.5vw;
+        border-bottom: 0.3vw solid red;
+    }
+    
+    #cabecera{
+        background-color: black;
+        height: 24.5vw;
+    }
+    
+    
+    
+    
+    #enlaces{
+        position: relative;
+        left: 75.5vw;
+        display: flex;
+        flex-direction: column;
+        height:15vw;
+    
+        top: -11vw;
+        font-family: Verdana,  sans-serif;
+        font-size: 1.33vw;
+        color: white;
+        
+    
+    }
+    
+    #origami{
+        position: relative;
+        height: 17.8vw;
+        width: 66.5vw;
+        top: 4.4vw;
+        left: 3.3vw;
+    }
+    
+    .contenido{
+        padding-top:0.5vw;
+        width: 13.4vw;
+        height:2.1vw;
+        border-top: 0.2vw solid white;
+        border-bottom: 0.2vw solid white;
+        text-align: center;
+        margin-bottom: 1vw;
+        color: white;
+        
+        text-decoration: none;
+    }
+    
+    .contenido:hover{
+        color:red;
+        transform: scale(1.1);
+        
+        border-top: 0.25vw solid red;
+        border-bottom: 0.25vw solid red;
+    }
+    
+    .titular{
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2.78vw;
+        font-weight: bold ;
+        letter-spacing: 0.07vw;
+    }
+    
+    .subtitular{
+        
+        font-family: 'Orbitron', sans-serif;
+        color: red;
+        
+        letter-spacing: 0.07vw;
+        font-weight: bold ;
+    }
+    
+    .texto, label{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.35vw;
+    }
+    
+    #introduccion{
+        position: relative;
+        top: -2.8vw;
+        height: 31vw;
+        
+        background-color: rgba(128, 128, 128, 0.623);
+        border-bottom: 0.3vw solid red;
+    }
+    
+    #introduccion img{
+        position: relative;
+        left: 1.1vw;
+        height: 12vw;
+        width: 12vw;
+    }
+    
+    #introduccion .titular{
+        position: relative;
+        top: 2.2vw;
+        left:2.2vw;
+    }
+    
+    #introduccion .subtitular{
+        position: relative;
+        left:2.2vw;
+    }
+    
+    #texto1{
+        position: relative;
+        left: 5vw;
+        top:-12vw;
+        width: 80%;
+        height: 12vw;
+        display: flex;
+        flex-direction: column;
+    }
+     
+    
+#noticias{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#bloque1{
+    margin-left:1.111vw;
+    width: 45%; 
+    top: -12.5vw;
+
+}
+
+#bloque2{
+    
+    width: 45%;   
+    position: relative;
+    margin-left:2.222vw;
+}
+
+
+#bloque1 .subtitular{
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    
+    
+    width: 100%;
+}
+
+
+#bloque1 .texto{
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+}
+
+#bloque2 .subtitular{
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+}
+
+#bloque2 .texto{
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+
+}
+
+
+span{
+    font-weight: bold;
+}
+
+.float{
+    float: left; 
+    margin-right: 0.556vw;   
+}
+
+#bloque1 .float{
+    height: 13.333vw;
+    width: 21.111vw;
+}
+
+#bloque2 .float{
+    height: 15.556vw;
+    width: 13.333vw;
+    
+    margin-right: 1.111vw;
+}
+
+#pie{
+    
+    background-color: black;
+    text-align: center;
+    color: blue;
+    padding-top: 1.111vw;
+    padding-bottom: 2.222vw;
+}
+
+#pie .texto{
+    left:0vw;
+    top:0vw;
+}
+
+#rojo{
+    color: red;
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+#galeria .titular{
+    position: relative;
+    top: 1.667vw;
+    left:2.1vw;
+}
+
+#galeria .subtitular{
+    position: relative;
+    top:-0.556vw;
+    left:2.222vw;
+}
+
+table{
+    position: relative;
+    left:2.222vw;
+    text-align: center;
+    margin-top: 3.333vw;
+    margin-bottom: 3.333vw;
+}
+
+
+
+table img{
+    width: 14.444vw;
+    height: 14.444vw;
+}
+
+caption{
+    background-color: rgba(128, 128, 128, 0.623);
+    font-weight: bold;
+    padding-top:0.333vw;
+    padding-bottom: 0.333vw;
+    margin-left:0.222vw;
+    margin-right: 0.222vw;
+}
+
+#contacto .titular{
+    position: relative;
+    top: 1.667vw;
+    left:2.222vw;
+}
+
+#contacto .subtitular{
+    position: relative;
+    top:-0.556vw;
+    left:2.222vw;
+}
+
+#contacto .texto{
+    position: relative;
+    top:-0.333vw;
+    left:2.222vw;
+
+}
+
+#formulario {
+
+    width: 82.222vw;
+    height: 45.556vw;
+    margin-left: 8.889vw;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(128, 128, 128, 0.623);
+    margin-bottom: 2.778vw;
+    border: 0.111vw solid black;
+
+}
+
+form{
+    width: 82.222vw;
+    height: 45.556vw;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.778vw;
+    
+
+}
+
+#contacto img{
+    position: relative;
+    top: 1.111vw;
+    left: 66.667vw;
+
+    width: 14.444vw;
+    height: 11.444vw;
+}
+
+#formulario .texto, label{
+    font-weight: bold;
+    
+    width: 18.889vw;
+}
+.radio{
+    margin-left:2.222vw;
+}
+
+#parte1{
+    width: 18.889vw;
+    position: relative;
+    left: -8.889vw;
+    top:-6.667vw;
+}
+#parte2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -7.778vw;
+    top:-4.444vw;
+}
+
+#elemento1{
+    margin-bottom: 0.556vw;
+}
+
+
+#selector{
+    width: 11.111vw;
+    position: relative;
+    top:  6.556vw;
+    margin-bottom: 0.556vw;
+}
+
+textarea{
+    position: relative;
+    width: 45.556vw; 
+    height: 16.667vw;
+}
+
+#boton{
+    font-weight: bold;
+    width: 11.111vw;
+    height: 3.333vw;
+    border: 0.222vw solid black;
+    position: relative;
+    left: 2.222vw;
+    top: 15vw;
+}
+
+
+
+#rojo:hover{
+    font-weight: bold;
+}
+
+
+}
+
+/* AL PASAR LOS CAMBIOS, HE TENIDO MODIFICACIONES, POR ELLO EN EL SIGUIENTE MEDIA LOS CORRIJO. SOY CONSCIENTE QUE PARA NADA NO ES LA MEJOR MANERA, PERO YA QUE PREMIABA EL TIEMPO
+LO HE SOLUCIONADO DE ESA MANERA. LO MÁS IMPORTANTE CREO QUE ES EL RESULTADO */
+
+@media (max-width: 900px) {
+
+    
+    #enlaces{
+        font-size: 2vw;
+        color: white;
+        
+    
+    }
+
+    .contenido{
+        padding-top:0.1vw;
+        padding-bottom: 0.5vw;
+        width: 13.4vw;
+        height:2.1vw;
+        border-top: 0.2vw solid white;
+        border-bottom: 0.2vw solid white;
+        text-align: center;
+        margin-bottom: 1vw;
+        color: white;
+        
+        text-decoration: none;
+    }
+    .texto, label{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2vw;
+    }
+
+    
+    #introduccion img{
+        position: relative;
+        left: 1.1vw;
+        height: 16vw;
+        width: 16vw;
+    }
+    
+    
+    #texto1{
+        position: relative;
+        left:11%;
+        top:-18vw;
+        width: 78%;
+        height: 12vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #rojo{
+        color: red;
+        font-size: 2.5vw;
+        text-decoration: none;
+    }
+
+    
+#parte1{
+    width: 18.889vw;
+    position: relative;
+    left: -10.889vw;
+    top:-4.667vw;
+}
+
+#elemento1{
+    position: relative;
+    top:-2.8vw;
+
+}
+
+#elemento2{
+    position: relative;
+    top:-1.3vw;
+}
+
+
+#selector{
+    width: 20vw;
+
+    position: relative;
+    top:  7.556vw;
+    margin-bottom: 0.556vw;
+}
+
+textarea{
+    position: relative;
+    top:12vw;
+    width: 45.556vw; 
+    height: 14.667vw;
+}
+
+#boton{
+    top: 10vw;
+}
+
+
+
+    
+}
+/* EN CADA MEDIA VOY ADAPTANDO EL TAMAÑO DE LA LETRA PARA UN CORRECTA VISUALIZACIÓN Y ALGUNA QUE OTRA POSICIÓN */
+
+@media (max-width: 800px) {
+
+    #bloque1{
+        top: -11.5vw;
+        }
+
+     
+}
+
+
+@media (max-width: 700px) {
+
+    #bloque1{
+        top: -10.5vw;
+        }
+}
+
+/* EN ESTE MEDIA ADAPTO PRINCIPALMENTE EL FORMULARIO Y ALGUNAS FUENTE */
+
+@media (max-width: 600px) {
+
+    
+
+    .titular{
+        font-size: 4vw;
+    }
+
+    #bloque1{
+        left:2vw;
+        top: -27vw;
+        }
+
+        
+    .texto, label{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3vw;
+    }
+    
+    #introduccion{
+        position: relative;
+        top:-4vw;
+        height: 55vw;
+    }
+
+    #rojo{
+        font-size: 5vw;
+    }
+    
+    #formulario .texto, #formulario label{
+        font-size: 2.2vw;
+    }
+
+    #elemento1{
+        position: relative;
+        top:-3.4vw;
+    
+    }
+    
+    #elemento2{
+        position: relative;
+        top:-2.3vw;
+    }
+    
+    
+    #selector{
+        width: 20vw;
+    
+        position: relative;
+        top:  8.556vw;
+        margin-bottom: 0.556vw;
+    }
+    
+    textarea{
+        position: relative;
+        top:12vw;
+        width: 45.556vw; 
+        height: 14.667vw;
+    }
+    
+    #boton{
+        top: 8vw;
+    }
+
+    
+    .contenido{
+        padding-bottom: 1.5vw;
+        font-size: 2.5vw;
+    }
+
+    #enlaces{
+        top:-12vw;
+    }
+    
+
+    
+
+}
+
+/* MODIFICO EL FORMULARIO, ADEMÁS DE HACER INVISIBLE LA TABLA HORIZONTAL Y HAGO VISIBLE LA VERTICAL */
+@media (max-width: 500px) {
+
+    .titular{
+        font-size: 4.5vw;
+    }
+
+    #bloque1{
+        top: -29.5vw;
+        }
+
+        #introduccion{
+            top:-4.35vw;
+        }
+        
+#formulario {
+
+    flex-direction: column;
+    height: 70vw;
+
+}
+
+form{
+    width: 82.222vw;
+    height: 45.556vw;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.778vw;
+    
+
+}
+
+
+#formulario .texto, label{
+    font-size: 2.5vw;
+}
+.radio{
+    margin-left:2.222vw;
+}
+
+#parte1 label{
+    position: relative;
+    top:-0.4vw;
+    font-size:2.5vw;
+}
+
+
+
+#parte1{
+    width: 18.889vw;
+    position: relative;
+    left: 0vw;
+    top:-6.667vw;
+}
+#parte2{
+    position: relative;
+    left: 4vw;
+    top:-7.5vw;
+}
+
+#elemento2{
+    top:-2vw;
+}
+
+
+#selector{
+    width: 30vw;
+    position: relative;
+    top:  10vw;
+    margin-bottom: 0.556vw;
+}
+
+textarea{
+    position: relative;
+    top:15vw;
+    width: 45.556vw; 
+    height: 16.667vw;
+}
+
+#boton{
+    font-weight: bold;
+    width:15vw;
+    height: 4vw;
+    border: 0.222vw solid black;
+    position: relative;
+    left: 2.222vw;
+    top: 15vw;
+}
+
+
+#galeria{
+    display: none;
+}
+
+#galeria2{
+    display: block;
+    
+}
+
+#galeria2 .titular{
+    position: relative;
+
+    left: 2.2vw;
+    top: 2.2vw
+
+}
+
+#galeria2 .subtitular{
+    position: relative;
+
+    left: 2.2vw;
+
+}
+
+#tablas{
+    display: flex;
+    position:relative;
+}
+table{
+    width: 45%;
+}
+
+#tabla1{
+    margin-right: 2%;
+}
+
+#tabla2{
+    margin-left: 2%;
+}
+
+
+}
+
+/* CAMBIO DE 2 DIV SEGUIDOS A UNO DEBAJO DE OTRO*/
+
+@media (max-width: 400px) {
+
+    .titular{
+        font-size: 5vw;
+    }
+
+    #bloque1{
+        top: -10vw;
+        }
+
+      
+#noticias{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+#bloque1{
+    margin-left:1.111vw;
+    width: 95%;
+    top: -2vw;
+
+}
+
+#bloque2{
+    
+    width: 100%;
+    position: relative;
+    margin-left:2.222vw;
+}
+
+    
+.texto, label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4vw;
+}
+
+#introduccion{
+    top:-5vw;
+    height: 85vw;
+}
+
+#rojo{
+    font-size: 6vw;
+}
+
+
+#bloque1 .float{
+    height: 25vw;
+    width: 30vw;
+}
+
+#bloque2 .float{
+    height: 30vw;
+    width: 20vw;
+    
+    margin-right: 1.111vw;
+}
+
+
+
+}
+
+
+/* ÚLTIMOS RETOQUE DE TAMAÑO DE FORMULARIO PARA LA PANTALLA MÍNIMA DE 300PX */
+
+
+@media (max-width: 300px) {
+    
+#introduccion{
+    top:-6vw;
+    height: 100vw;
+}
+
+      
+#formulario {
+
+    flex-direction: column;
+    height: 115vw;
+
+}
+
+form{
+    width: 82.222vw;
+    height: 45.556vw;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.778vw;
+    
+
+}
+
+
+#formulario .texto, label{
+    font-size: 3.5vw;
+}
+.radio{
+    margin-left:2.222vw;
+}
+
+#parte1 label{
+    position: relative;
+    left: 8vw;
+    top:-7vw;
+    font-size:3.5vw;
+}
+
+
+#parte1{
+    width: 30vw;
+    position: relative;
+    left: 0vw;
+    top:0vw;
+}
+#parte2{
+    position: relative;
+    top:3vw;
+}
+#nombre{
+    width: 35vw;
+
+}
+
+#email{
+    top: -1vw;
+    width: 35vw;
+}
+
+
+#selector{
+    width: 40vw;
+    position: relative;
+    top:  30vw;
+    margin-bottom: 0.556vw;
+}
+
+textarea{
+    position: relative;
+
+    left:-18vw;
+    top:45vw;
+    width: 70vw; 
+    height: 16.667vw;
+}
+
+#boton{
+    font-weight: bold;
+    width:20vw;
+    height: 6vw;
+    border: 0.222vw solid black;
+    position: relative;
+    left: 30vw;
+    top: 20.5vw;
+}
+
+.titular{
+    font-size: 6.5vw;
+}
+
+
+.contenido{
+    padding-bottom: 2.5vw;
+    font-size: 3.5vw;
+    width: 20vw;
+}
+
+#enlaces{
+    top:-15vw;
+    margin-bottom: 1vw;
+    left:72vw;
+}
+
+#texto1{
+    width: 70%;
+    top:-23vw;
+}
+
+
+}
