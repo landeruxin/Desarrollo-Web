@@ -5,10 +5,8 @@ var listaPrecio = [];
 var listaImagenes = [];
 var bocatas = ["Bonito y anchoa", "Huevos rotos","Vegetal con pollo"];
 var precioBocatas = [7.5,6,5.5];
-var imagenBocatas = ["bocadillo1.jpg","bocadillo2.jpg","bocadillo3.jpg"];
 var bebidas = ["Agua","Korricolari","Txakoli Ameztoi"];
 var precioBebidas = [1,2.2,12];
-var imagenBebidas = ["agua.jpg","refresco.jpg","txakoli.jpg"];
 var contador = 0;
 
 
@@ -24,8 +22,10 @@ function sumar(num , clase){
 
    
 
-    let = posicion = 0;
+    let posicion = 0;
     let existe = false;
+    let nombre ="";
+    let precio = 0;
 
     if(clase==1){
         alert("Ha añadido al carrito un bokata de "+bocatas[num]);
@@ -34,17 +34,20 @@ function sumar(num , clase){
             if(listaNombre[i]==bocatas[num]){
                 posicion = i;
                 existe = true;
+                nombre = bocatas[num];
+                precio = precioBocatas[num];
             }
         }
 
         if(existe == true){
             listaCantidad[posicion] = listaCantidad[posicion] + 1;
+            cambioFila(nombre,listaCantidad[posicion],precio)
         }else{
             
         listaNombre.push(bocatas[num]);
         listaCantidad.push(1);
         listaPrecio.push(precioBocatas[num]);
-        listaImagenes.push(imagenBocatas[num]);
+        nuevaFila(bocatas[num],precioBocatas[num]);
         }
 
         
@@ -59,17 +62,22 @@ function sumar(num , clase){
                 posicion = i;
                 existe = true;
                 
+                nombre = bebidas[num];
+                precio = precioBebidas[num];
+                
             }
         }
 
         if(existe == true){
             listaCantidad[posicion] = listaCantidad[posicion] + 1;
+            cambioFila(nombre,listaCantidad[posicion],precio)
         }else{
             
         listaNombre.push(bebidas[num]);
         listaCantidad.push(1);
         listaPrecio.push(precioBebidas[num]);
-        listaImagenes.push(imagenBebidas[num]);
+        
+        nuevaFila(bebidas[num],precioBebidas[num]);
         }
         
         contador = contador + 1;
@@ -99,7 +107,7 @@ function quitar(num){
     document.getElementById('a'+num).innerHTML = "";   
 }
 
-function fin(){
+function pagar(){
 
     let frase ="";
 
@@ -107,7 +115,24 @@ function fin(){
         frase = frase + "-"+listaNombre[i]+"  x  "+listaCantidad[i]+"  x  "+listaPrecio[i]+"€    =   "+listaCantidad[i]*listaPrecio[i]+"€\n";
     }
 
-    alert(frase+"\n\nPrecio total = "+total+"€")
+    let ventana = window.open('', 'PRINT', 'height=650,width=900,top=100,left=150');
+    ventana.defaultStatus
+
+    ventana.document.write(`<html><head><title>Factura EuskoBokata</title>`);
+    
+    
+    ventana.document.write('<style type="text/css"> #imprimir1{border: 1vw solid rgb(33, 153, 33);} #tit{text-align:center;}body { font-size: 5vw; text-align:left; }</style>');
+    
+    
+    ventana.document.write('</head><body >');
+    ventana.document.write(document.getElementById("imprimir").innerHTML);
+    ventana.document.write('</body></html>');
+    ventana.document.close(); // necessary for IE >= 10
+    ventana.focus(); // necessary for IE >= 10*/
+
+    ventana.print();
+    ventana.close();
+
 
 
 }
@@ -126,30 +151,42 @@ function abrirCarrito(){
 function carritoVacio(){
     if(contador>0){
         
-        document.getElementById("vacio").style.display="none";
+        document.getElementById("vacia").style.display="none";
         document.getElementById("parte3").style.display="flex";
         document.getElementById("total").style.display="block";
-        document.getElementById("fila").style.display="flex";
+        document.getElementById("parte2").style.display="block";
+        document.getElementById("pagar").style.display="block";
         
 
     }else{
         
-        document.getElementById("vacio").style.display="block";
+        document.getElementById("vacia").style.display="block";
         document.getElementById("parte3").style.display="none";
         document.getElementById("fila").style.display="none";
+        
+        document.getElementById("parte2").style.display="none";
+        
+        document.getElementById("pagar").style.display="none";
+
     }
 }
 
-function pintarCarrito(){
-    for(var i=0; i<listaNombre.length;i++){
-        alert(listaNombre[i]);
-        document.getElementById('parte2').innerHTML='<div class="fila1">'+
-       ' <img src="'+listaImagenes[i]+'" alt="">'+
-       ' <p id="nombre">'+listaNombre[i]+'</p>'+
-        '<p id="cantidad">'+listaCantidad[i]+'</p>'+
-       ' <p id="guion1">-</p>'+
-       ' <p id="precio">'+listaPrecio[i]+'</p>'+
-       ' <p id="guion2">-</p>'+
-       ' <p id="subtotal">'+listaCantidad[i]*listaPrecio[i]+'</p></div>';     
-    }
+function nuevaFila(nombre,precio){
+    let frase ="";
+    
+        frase = "-"+nombre+"  x   1   x  "+precio+"€    =   "+precio+"€";
+        var div = document.getElementById("parte2");
+        var texto = document.createElement("p");
+        texto.setAttribute("id",nombre);
+        texto.innerHTML = frase;
+        div.appendChild(texto); 
+
+    
+        document.getElementById("total").innerHTML = total+"€";
+      
+}
+
+function cambioFila(nombre,num,precio){
+    document.getElementById(nombre).innerHTML = "-"+nombre+"  x   "+num+"   x  "+precio+"€    =   "+precio*num+"€";
+    document.getElementById("total").innerHTML = total+"€";
 }

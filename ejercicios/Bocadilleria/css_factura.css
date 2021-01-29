@@ -1,0 +1,74 @@
+#carrito{
+    background-color: aliceblue;
+    width: 25vw;
+    position: fixed;
+    top: 0.9vw;
+    left: 72.95vw;
+    display: none;
+}
+#parte1{
+    width: 100%;
+    height: 4vw;
+    position: relative;
+    top:0vw;
+    border-bottom: 0.4vw solid rgb(33, 153, 33);
+}
+
+#carrito input{
+    width: 1vw;
+    height: 1vw;
+    background-color: rgb(33, 153, 33); 
+    position: relative;
+    top:-4.2vw;
+    left:23.5vw;
+    border-radius: 50%;}
+
+#carrito p{
+    text-align: center;
+    font-family: 'Euskal Font', sans-serif;
+    font-size: 1.5vw;
+}
+
+#boton_carro{
+    width: 5vw;
+    height: 5vw;
+    position: fixed;
+    top: 1vw;
+    left:92.5vw;
+    background-color: aliceblue;
+    border-radius: 25%;
+}
+
+#vacia{
+    border-bottom: 0.4vw solid rgb(33, 153, 33);
+}
+
+
+#parte2{
+    display: none;
+    text-align-last: start;
+}
+
+#parte2 p{
+    margin-left: 1vw;
+    font-size: 1vw;
+}
+
+#parte3{
+    background-color: aliceblue;
+    position: relative;
+    border-top: 0.4vw solid rgb(33, 153, 33);
+    display: none;
+    
+    border-bottom: 0.4vw solid rgb(33, 153, 33);
+}
+
+#parte3 p{
+    margin-left:0.5vw;
+}
+
+#total{
+    position: relative;
+    left: 5vw;
+    display: none;
+}

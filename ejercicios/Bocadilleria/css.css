@@ -123,7 +123,7 @@ button{
 }
 
 #carrito{
-    background-color: white;
+    background-color: aliceblue;
     width: 25vw;
     position: fixed;
     top: 0.9vw;
@@ -149,7 +149,7 @@ button{
     border-radius: 50%;}
 
 #carrito p{
-    text-align-last: center;
+    text-align: center;
     font-family: 'Euskal Font', sans-serif;
     font-size: 1.5vw;
 }
@@ -160,78 +160,28 @@ button{
     position: fixed;
     top: 1vw;
     left:92.5vw;
-    background-color: white;
+    background-color: aliceblue;
     border-radius: 25%;
 }
 
-.fila1{
-    height: 4vw;
-    vertical-align: center;
+#vacia{
+    border-bottom: 0.4vw solid rgb(33, 153, 33);
+}
+
+
+#parte2{
     display: none;
+    text-align-last: start;
 }
 
-.fila1 p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#parte2 p{
+    margin-left: 1vw;
     font-size: 1vw;
-    vertical-align: left; 
-}
-
-.fila1 img{
-    width: 7vw;
-    height: 3.5vw;
-    position: relative;
-    top:0.25vw;
-    left:0.5vw;
-}
-
-#nombre{
-    width: 7vw;
-    
-    position: absolute;
-    left: 8vw;
-    top:11vw;
-}
-#cantidad{
-    width:2vw;
-    position: absolute;
-    left: 16vw;
-    top:11vw;
-}
-
-
-
-#guion1{
-    width: 1vw;
-    position: absolute;
-    left: 17.5vw;
-    top:11vw;
-}
-
-#precio{
-    width:2vw;
-    position: absolute;
-    left: 18.5vw;
-    top:11vw;
-}
-
-#guion2{
-    width: 1vw;
-    position: absolute;
-    left:20.75vw;
-    top:11vw;
-}
-
-#subtotal{
-    width:2vw;
-    position: absolute;
-    left: 22vw;
-    top:11vw;
 }
 
 #parte3{
-    background-color: white;
+    background-color: aliceblue;
     position: relative;
-    top:5vw;
     border-top: 0.4vw solid rgb(33, 153, 33);
     display: none;
     
@@ -248,5 +198,8 @@ button{
     display: none;
 }
 
-
-
+#pagar{
+    border-bottom: 0.4vw solid rgb(33, 153, 33);
+    cursor: pointer;
+    display: none;
+}
