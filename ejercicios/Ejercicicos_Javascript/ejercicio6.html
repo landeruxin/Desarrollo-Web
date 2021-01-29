@@ -1,0 +1,37 @@
+<!-- 6.	El evento onmouseover se desencadena cuando pasamos el ratón sobre el 
+    elemento que lo contiene.
+El evento onmouseout se desencadena cuando el ratón abandona el elemento que 
+lo contiene
+Realiza una versión del proyecto bombilla para que se encienda cuando pasemos 
+el ratón sobre la imagen y se apague al salir el ratón de esta -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <head >
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="stylesheet" type="text/css" href="ejercicio6.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        
+        <script type="text/javascript" src="ejercicio6.js"> </script>
+        <title>Ejercicio6</title>
+    
+    
+    </head>
+<body>
+
+    <div id="contenedor" onmouseover="encender()" onmouseout="apagar()">
+
+
+            <img src="apagado.PNG" alt="" id="apagado">
+            <img src="encendido.PNG" alt="" id="encendido">
+
+
+
+    </div>
+    
+</body>
+</html>

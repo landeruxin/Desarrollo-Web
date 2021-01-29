@@ -1,0 +1,252 @@
+#cabecera{
+    max-width: 98vw;
+    width: 98vw;
+    background-color: rgb(33, 153, 33);    
+    height: 11.828vw;    
+}
+
+@font-face {
+    font-family: Euskal Font;
+    src: url(euskal-font-normal.ttf);
+    }
+#titulo{
+    font-family: 'Euskal Font', sans-serif;
+    text-align: center;
+    font-size: 5vw;
+}
+
+#contenedor_titulo{
+    width: 98vw;
+    height: 11.828vw; 
+
+    position: relative;
+    top:-11.828vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cabecera img{
+    width: 10.657vw;
+    height: 7.828vw;
+    padding-top:2vw;
+    padding-bottom: 2vw;
+    float: left;
+    margin-left: 15vw;
+}
+
+.titulo{
+    font-family: 'Euskal Font', sans-serif;
+    text-align: center;
+    font-size: 4vw;
+    color: rgb(33, 153, 33);    
+}
+
+.fila{
+    
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
+    background-color: rgba(33, 153, 33, 0.479);   
+}
+
+
+.cajon{
+ width: 30vw;
+ margin:auto;
+}
+
+
+.bocata {
+    width: 20vw;
+    position: relative;
+    left: 5vw;
+}
+
+
+.bebida {
+    width: 15vw;        
+    position: relative;
+    left: 7.5vw;
+}
+
+
+.bocata:hover , .bebida:hover{
+    transform: scale(1.2)
+}
+
+button{
+    position: relative;
+    width: 10vw;
+    left:44vw;
+    top: 2vw;
+}
+
+.cajon p{
+    font-family: 'Euskal Font', sans-serif;
+    font-size: 1.2vw;
+    text-align:center;
+    position: relative;
+    left: 3vw;
+    width: 24vw;
+    height: 0vw;
+    float: inherit;
+    font-weight: bold;
+}
+
+#bocatas .cajon p{
+    
+    top: -13.5vw;
+    
+    color: blue;
+}
+
+#bebidas .cajon p{
+    
+    top:-17.5vw;
+    color: red;
+    left: 6vw;
+    width: 18vw;
+
+}
+
+.boton{
+    width: 4vw;
+    height: 4vw;
+    position: relative;
+    left: 13vw;
+
+}
+
+#carrito{
+    background-color: white;
+    width: 25vw;
+    position: fixed;
+    top: 0.9vw;
+    left: 72.95vw;
+    display: none;
+}
+
+#parte1{
+    width: 100%;
+    height: 4vw;
+    position: relative;
+    top:0vw;
+    border-bottom: 0.4vw solid rgb(33, 153, 33);
+}
+
+#carrito input{
+    width: 1vw;
+    height: 1vw;
+    background-color: rgb(33, 153, 33); 
+    position: relative;
+    top:-4.2vw;
+    left:23.5vw;
+    border-radius: 50%;}
+
+#carrito p{
+    text-align-last: center;
+    font-family: 'Euskal Font', sans-serif;
+    font-size: 1.5vw;
+}
+
+#boton_carro{
+    width: 5vw;
+    height: 5vw;
+    position: fixed;
+    top: 1vw;
+    left:92.5vw;
+    background-color: white;
+    border-radius: 25%;
+}
+
+.fila1{
+    height: 4vw;
+    vertical-align: center;
+    display: none;
+}
+
+.fila1 p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1vw;
+    vertical-align: left; 
+}
+
+.fila1 img{
+    width: 7vw;
+    height: 3.5vw;
+    position: relative;
+    top:0.25vw;
+    left:0.5vw;
+}
+
+#nombre{
+    width: 7vw;
+    
+    position: absolute;
+    left: 8vw;
+    top:11vw;
+}
+#cantidad{
+    width:2vw;
+    position: absolute;
+    left: 16vw;
+    top:11vw;
+}
+
+
+
+#guion1{
+    width: 1vw;
+    position: absolute;
+    left: 17.5vw;
+    top:11vw;
+}
+
+#precio{
+    width:2vw;
+    position: absolute;
+    left: 18.5vw;
+    top:11vw;
+}
+
+#guion2{
+    width: 1vw;
+    position: absolute;
+    left:20.75vw;
+    top:11vw;
+}
+
+#subtotal{
+    width:2vw;
+    position: absolute;
+    left: 22vw;
+    top:11vw;
+}
+
+#parte3{
+    background-color: white;
+    position: relative;
+    top:5vw;
+    border-top: 0.4vw solid rgb(33, 153, 33);
+    display: none;
+    
+    border-bottom: 0.4vw solid rgb(33, 153, 33);
+}
+
+#parte3 p{
+    margin-left:0.5vw;
+}
+
+#total{
+    position: relative;
+    left: 5vw;
+    display: none;
+}
+
+
+

@@ -1,0 +1,36 @@
+<!-- 5.	Podemos mostrar u ocultar un elemento cambiando el valor de su propiedad
+     display.
+Un párrafo tiene por defecto su display: block. Si queremos que no se muestre 
+tendríamos que poner display:none
+Para cambiar el valor del display desde javascript:
+document.getElementById('txt2').style.display='none'
+
+Realiza una aplicación que muestre un párrafo y dos botones, uno que muestre 
+el párrafo y otro que lo oculte.
+Realiza otra versión que solo tenga un botón que muestre/oculte el párrafo
+
+
+ -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script type="text/javascript" src="ejercicio5.js"> </script>
+     <title>Ejercicio5</title>
+</head>
+<body>
+
+
+
+<p id="parrafo">Párrafo</p>
+
+<button type="submit" onClick="ver()">Mostrar Párrafo</button> 
+<br>
+<br>
+<button type="submit" onClick="ocultar()">Ocultar Párrafo</button>
+
+</body>
+</html>

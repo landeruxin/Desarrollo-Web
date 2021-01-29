@@ -1,0 +1,20 @@
+#contenedor{
+    
+    border: 2px black solid;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    left: 39vw;
+    top: 10vw;
+
+}
+
+#apagado , #encendido{
+    width: 20vw;
+    height: 20vw;
+
+}
+
+#encendido{
+    display: none;
+}

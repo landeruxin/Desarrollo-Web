@@ -1,0 +1,31 @@
+#contenedor{
+    width: 98vw;
+}
+
+#apagado , #encendido{
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    left: 39vw;
+
+}
+
+button{
+    position: absolute;
+    width: 10vw;
+    height: 2vw;
+    top:9vw;
+}
+
+#encendido{
+    display: none;
+}
+
+#boton1{    
+    left: 14.5vw;
+}
+
+#boton2{
+    left: 73.5vw;
+
+}

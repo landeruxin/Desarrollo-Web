@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="fotos/icono.ico" type="image/ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <script type="text/javascript" src="javascript.js"> </script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap" rel="stylesheet">
+    <title>EuskoBokata</title>
+
+
+</head>
+<body onload="inicio()">
+<div id="cabecera">
+
+    <img src="fotos/euskobokata.png" alt="">
+
+    <div id="contenedor_titulo">
+    <p id="titulo">EuskoBokata</p>
+    </div>
+
+</div>
+
+<div id="bocatas">
+
+    <p class="titulo">Bokatas</p>
+
+    <div class="fila">
+        <div class="cajon" >
+        <img class="bocata"  onmouseenter="enseñar(0)" onmouseout="quitar(0)" src="fotos/bocadillo1.jpg" alt="">
+        
+        <p id="a0"></p>
+        <input type="image" src="fotos/añadir.png" class="boton" onclick="sumar('0','1')"/>
+        </div>
+        <div class="cajon" >
+        <img class="bocata"   onmouseenter="enseñar(1)"  onmouseout="quitar(1)" src="fotos/bocadillo2.jpg" alt="">
+        <p id="a1"></p>
+        <input type="image" src="fotos/añadir.png" class="boton" onclick="sumar(1,1)"/>
+        </div>
+        <div class="cajon" >
+        <img class="bocata"   onmouseenter="enseñar(2)"  onmouseout="quitar(2)" src="fotos/bocadillo3.jpg" alt="">
+        <p id="a2"></p>
+        <input type="image" src="fotos/añadir.png" class="boton" onclick="sumar(2,1)"/>
+        </div>
+    </div>
+
+</div>
+
+<div id="bebidas">
+
+    <p class="titulo">Bebidas</p>
+
+    <div class="fila">
+        <div class="cajon" >
+        <img class="bebida"  onmouseover="enseñar(3)"  onmouseout="quitar(3)" src="fotos/agua.jpg" alt="">
+        <p id="a3"></p>
+        <input type="image" src="fotos/añadir.png" class="boton" onclick="sumar(0,2)" />
+        </div>
+        <div class="cajon" >
+        <img class="bebida"  onmouseover="enseñar(4)"   onmouseout="quitar(4)" src="fotos/refresco.jpg" alt="">
+        <p id="a4"></p>
+        <input type="image" src="fotos/añadir.png" class="boton" onclick="sumar(1,2)"/>
+        </div>
+        <div class="cajon" >
+        <img class="bebida"  onmouseover="enseñar(5)"  onmouseout="quitar(5)" src="fotos/txakoli.jpg" alt="">
+        <p id="a5"></p>
+        <input type="image" src="fotos/añadir.png" class="boton"  onclick="sumar(2,2)"/>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+<button type="submit" onClick="fin()">Precio Total</button>
+
+
+<input type="image" src="fotos/carrito.png" id="boton_carro" onclick="abrirCarrito()"/>
+
+
+<div id="carrito">
+
+    <div id="parte1">
+
+        <p>Su carrito:</p>
+
+        <input type="image" src="fotos/x.png" onclick="cerrarCarrito()" />
+
+
+    </div>
+
+
+
+    <div id="parte2">
+
+        <p id="vacio">Su carrito está vacio.</p>
+<!-- 
+        <div id="fila">
+
+            <img src="fotos/bocadillo1.jpg" alt="">
+            <p id="nombre"></p>
+            <p id="cantidad"></p>
+            <p id="guion1">-</p>
+            <p id="precio"></p>
+            <p id="guion2">-</p>
+            <p id="subtotal"></p>
+
+
+        </div> -->
+
+
+
+    </div>
+    <div id="parte3">
+
+        <p>Importe total: </p>
+        <p id="total"></p>
+
+    </div>
+
+
+
+</div>
+
+
+
+    
+</body>
+</html>
