@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css.css">
     
-    <script type="text/javascript" src="javascript.js"> </script>
+    <script type="text/javascript" src="javascript1.js"> </script>
     <title>EuskoBokata</title>
 
 
@@ -75,7 +75,6 @@
 
 </div>
 
-<button type="submit" onClick="fin()">Precio Total</button>
 
 
 <input type="image" src="fotos/carrito.png" id="boton_carro" onclick="abrirCarrito()"/>
@@ -85,10 +84,14 @@
     <div id="imprimir">
             <div id="imprimir1">
 
+                
+
 
     <div id="parte1">
 
         <p id="tit">EuskoBokata</p>
+
+        <div id="cabec"><p>Kale Nagusia 10</p><p>Getaria</p><p>666666666</p><p id="numeroFactura"></p></div>
 
         <input type="image" src="fotos/x.png" onclick="cerrarCarrito()" id="x" />
 
@@ -115,11 +118,20 @@
 </div>
 </div>
 
+    <div id="botones">
+
     <div id="pagar" onclick="pagar()">
 
-        <p>Realizar Pago</p>
+        <p>Pagar productos</p>
 
     </div>
+
+    <div id="limpiar" onclick="limpiar()">
+
+        <p>Vaciar productos</p>
+
+    </div>
+</div>
 
 
 

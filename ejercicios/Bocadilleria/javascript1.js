@@ -8,12 +8,22 @@ var precioBocatas = [7.5,6,5.5];
 var bebidas = ["Agua","Korricolari","Txakoli Ameztoi"];
 var precioBebidas = [1,2.2,12];
 var contador = 0;
+var factura = 1;
+
 
 
 function inicio(){
+    total = 0;
+
+
+
+    if(localStorage.getItem("factura")>factura){
+        factura = parseInt(localStorage.getItem("factura"));
+    }else{
+        localStorage.setItem("factura",factura);
+    }
 
     
-    total = 0;
 }
 
 
@@ -83,11 +93,11 @@ function sumar(num , clase){
         
         contador = contador + 1;
         carritoVacio();
-        
     }
     
 
 
+   
 }
 
 function enseñar(num){
@@ -113,8 +123,6 @@ function cerrarCarrito(){
 }
 
 function pagar(){
-    
-    
 
     let frase ="";
 
@@ -125,7 +133,7 @@ function pagar(){
     let ventana = window.open('', 'PRINT', 'height=650,width=900,top=100,left=150,orientation:landscape');
     ventana.defaultStatus;
 
-    ventana.document.write('<html><head><title>Factura EuskoBokata</title>');
+    ventana.document.write('<html><head><title>Nº Factura: '+factura+'</title>');
     
     
     ventana.document.write('<style type="text/css">  p{font-size: 2.5vw;} #imprimir1{border: 1vw solid rgb(33, 153, 33); width:40vw; position:relative; left:29vw;} #tit{text-align:center;}body { font-size: 5vw; text-align:left;  } #cabec{ text-align:center; position:relative; top:-4vw;  border-bottom: 0.5vw dashed rgb(33, 153, 33);} #cabec p{font-size: 1.8vw;} #tit{font-size: 6vw;} #parte2{position:relative; top:-2vw; border-bottom: 0.5vw dashed rgb(33, 153, 33);} #parte2 p{position:relative; left: 2vw;} #parte3{margin-left:1vw;  } #parte3 p{font-size:4.8vw;}</style>');
@@ -144,12 +152,18 @@ function pagar(){
     
     ventana.close();
 
-    
+    factura = factura + 1;
+    localStorage.setItem("factura",factura);
+    location.reload();
 
 
 
 }
 
+function cerrarCarrito(){
+    document.getElementById("carrito").style.display="none";
+    document.getElementById("boton_carro").style.display="block";
+}
 
 function abrirCarrito(){
     document.getElementById("carrito").style.display="block";
@@ -167,7 +181,6 @@ function carritoVacio(){
         document.getElementById("pagar").style.display="block";
         document.getElementById("limpiar").style.display="block";
         abrirCarrito();
-        
 
     }else{
         
@@ -183,7 +196,6 @@ function carritoVacio(){
     }
 }
 
-
 function nuevaFila(nombre,precio){
     let frase ="";
     
@@ -193,6 +205,7 @@ function nuevaFila(nombre,precio){
         texto.setAttribute("id",nombre);
         texto.innerHTML = frase;
         div.appendChild(texto); 
+
     
         document.getElementById("total").innerHTML = total+"€";
       
