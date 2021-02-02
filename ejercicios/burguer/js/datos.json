@@ -1,0 +1,43 @@
+[{
+    "id": 0,
+    "imagen": "imagenes/pizza.png",
+    "nombre": "Pizza",
+    "descripcion": "Estupenda pizza casera hecha al horno de leña",
+    "precio": 5.0
+}, {
+    "id": 1,
+    "imagen": "imagenes/hamburguesa.jpg",
+    "nombre": "Burguer",
+    "descripcion": "Riquísima con pan casero y extra de queso",
+    "precio": 4.5
+}, {
+    "id": 2,
+    "imagen": "imagenes/pasta.jpg",
+    "nombre": "Pasta",
+    "descripcion": "Exquisita pasta fresca al huevo",
+    "precio": 5.5
+}, {
+    "id": 3,
+    "imagen": "imagenes/refresco.jpg",
+    "nombre": "Refresco",
+    "descripcion": "Limonada casera con mucho hielo",
+    "precio": 1.5
+}, {
+    "id": 4,
+    "imagen": "imagenes/cafe.jpg",
+    "nombre": "Café",
+    "descripcion": "Aromático café recien tostado",
+    "precio": 1.4
+}, {
+    "id": 5,
+    "imagen": "imagenes/postre.jpg",
+    "nombre": "Postre",
+    "descripcion": "Especialidad de la casa",
+    "precio": 3.0
+}, {
+    "id": 6,
+    "imagen": "imagenes/postre.jpg",
+    "nombre": "Postre",
+    "descripcion": "Especialidad de la casa tamaño gigante",
+    "precio": 3.0
+}]

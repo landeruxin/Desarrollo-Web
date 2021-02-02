@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplos</title>
+    <style>
+        .container {
+            padding: 100px;
+            font-family: helvetica;
+        }
+    </style>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        // ../ salir de la carpeta
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="elem1">
+            <p>ELEMENTO 01</p>
+            <p>ELEMENTO 02</p>
+        </div>
+
+        <div id="elem2">
+            <p>ELEMENTO 02</p>
+        </div>
+
+
+        <script>
+            /*
+                        $(document).ready(function() {
+                            //añadir el código DELANTE
+                            $("#elem1 p").prepend(" Este texto va DELANTE ");
+
+                            //añadir el código DETRÁS
+                            $("#elem1 p").append(" Este texto va DETRÁS ");
+                        });
+                        */
+
+            $(() => {
+                //añadir el código DELANTE
+                $("#elem1 p").prepend(" Este texto va DELANTE ");
+
+                //añadir el código DETRÁS
+                $("#elem1 p").append(" Este texto va DETRÁS ");
+            })
+        </script>
+
+
+    </div>
+
+</body>
+
+</html>
