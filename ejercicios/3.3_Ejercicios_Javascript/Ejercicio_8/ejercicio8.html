@@ -1,0 +1,54 @@
+<!--8.	Realizar una app que muestre un botón para cada día de la semana que al ser pulsado muestre el menú del día
+
+ -->
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <script type="text/javascript" src="ejercicio8.js"> </script>
+        <link rel="stylesheet" type="text/css" href="ejercicio8.css">
+         <title>Ejercicio8</title>
+    </head>
+    <body onload="inicio()">
+        <p id="titulo">8.	Realizar una app que muestre un botón para cada día de la semana que al ser pulsado muestre el menú del día</p>
+
+        <div id="enlaces">
+
+            <input id="lunes" type="button" value="Lunes" onclick="mandar(0)">
+            <input id="martes" type="button" value="Martes" onclick="mandar(1)">
+            <input id="miercoles" type="button" value="Miercoles" onclick="mandar(2)">
+            <input id="jueves" type="button" value="Jueves" onclick="mandar(3)">
+            <input id="viernes" type="button" value="Viernes" onclick="mandar(4)">
+                
+
+        </div>
+
+        <div id="menu">
+        <div>
+        <p id="subtitulo"></p>
+        </div>
+        <div class = "fila">
+        <p>Primer plato:</p> 
+        <p id="primero"></p>
+        </div>
+        <div class = "fila">
+            <p>Segundo plato:</p> 
+            <p id="segundo"></p>
+            </div>
+        
+            <div class = "fila">
+            <p>Postre:</p> 
+            <p id="postre"></p>
+        </div>   
+
+        <img src="" alt="" id="foto">
+    </div>
+        
+        
+
+            
+    </body>
+    </html>

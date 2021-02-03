@@ -1,0 +1,52 @@
+<!--5.	Crear una app que pida los datos al usuario y los muestre en la tabla 
+    de abajo como en la imagen
+ -->
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <script type="text/javascript" src="ejercicio5.js"> </script>
+        <link rel="stylesheet" type="text/css" href="ejercicio5.css">
+         <title>Ejercicio5</title>
+    </head>
+    <body>
+        <p id="titulo">5.	Crear una app que pida los datos al usuario y los muestre en la tabla de abajo como en la imagen
+            </p>
+
+            <p class="subtitulo">Formulario</p>
+
+            <form >
+                <p>Nombre: <input type="text" name="nombre" size="40"></p>
+                <p>Apellido: <input type="text" name="apellido" size="40"></p>
+                <p>Email: <input type="text" name="email" size="40"></p>
+                <p>Ciudad: <input type="text" name="ciudad" size="40"></p>
+                <input id="mandar" type="button" value="Mostrar datos" onclick="mostrar(nombre.value,apellido.value,email.value,ciudad.value)">
+                
+              </form>
+
+              <p class="subtitulo">Mostrar datos</p>
+
+              <table>
+                  <tr>
+                      <td class="texto">Nombre:</td>
+                      <td id="nombre"></td>
+                  </tr>
+                  <tr>
+                    <td class="texto">Apellido:</td>
+                    <td id="apellido"></td>
+                </tr>
+                <tr>
+                    <td class="texto">Email:</td>
+                    <td id="email"></td>
+                </tr>
+                <tr>
+                    <td class="texto">Ciudad:</td>
+                    <td id="ciudad"></td>
+                </tr>
+              </table>
+
+    </body>
+    </html>

@@ -1,0 +1,36 @@
+<!--6.	Realizar una app que pida en un formulario el nombre y la edad y haga las siguientes comprobaciones:
+a.	Que el nombre contenga algo
+b.	Que la edad contenga algo
+c.	Que la edad sea un número
+d.	Que la edad sea un número de dos cifras como máximo
+
+ -->
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <script type="text/javascript" src="ejercicio6.js"> </script>
+        <link rel="stylesheet" type="text/css" href="ejercicio6.css">
+         <title>Ejercicio6</title>
+    </head>
+    <body >
+        <p id="titulo">6.	Realizar una app que pida en un formulario el nombre y la edad y haga las siguientes comprobaciones:
+        a.	Que el nombre contenga algo
+        b.	Que la edad contenga algo
+        c.	Que la edad sea un número
+        d.	Que la edad sea un número de dos cifras como máximo
+        </p>
+
+            <p class="subtitulo">Formulario</p>
+
+            <form >
+                <p>Nombre: <input type="text" name="nombre" size="40"></p>
+                <p>Edad: <input type="text" name="edad" size="40"></p>
+                <input id="mandar" type="button" value="Mostrar datos" onclick="mostrar(nombre.value,edad.value)">
+                
+              </form>
+    </body>
+    </html>
