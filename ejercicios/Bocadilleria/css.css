@@ -4,7 +4,7 @@
     background-color: rgb(33, 153, 33);    
     height: 11.828vw;    
 }
-
+/* Letra que usaremos nueva */
 @font-face {
     font-family: Euskal Font;
     src: url(euskal-font-normal.ttf);
@@ -236,4 +236,76 @@ button{
     display: none;
     text-align: center;
 }
+/* Pequeños retoques para dispositivos de pantalla inferior */
+@media (max-width:900px){
+    .fila p{
+        font-size: 2vw;
+    }
 
+    
+    #carrito{
+        width: 40vw;
+        left: 57.95vw;
+        
+    }
+
+    #carrito input{
+        width: 2vw;
+        height: 2vw;
+        left:37.5vw;
+        top:-8vw;
+    }
+    #carrito p{
+        font-size: 3vw;
+    }
+
+    #parte2 p{
+        text-align: left;
+        font-size: 2vw;
+    }
+
+    #boton_carro{
+        top:2vw;
+    }
+}
+/* Pequeños retoques para dispositivos de pantalla inferior */
+@media (max-width:500px){
+    .fila p{
+        font-size: 3vw;
+    }
+
+    
+    #carrito{
+        width: 50vw;
+        left: 52.95vw;
+        
+    }
+
+    #carrito input{
+        width: 3vw;
+        height: 3vw;
+        left:42.5vw;
+        top:-8vw;
+    }
+    #carrito p{
+        font-size: 3vw;
+    }
+
+    #parte2 p{
+        text-align: left;
+        font-size: 2.3vw;
+    }
+
+    #boton_carro{
+        top:2vw;
+    }
+
+    
+.boton{
+    width: 6vw;
+    height: 6vw;
+    position: relative;
+    left: 11vw;
+
+}
+}

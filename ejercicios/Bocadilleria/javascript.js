@@ -15,7 +15,7 @@ var factura = 1;
 function inicio(){
     total = 0;
 
-
+    /* Inicializamos el LocalStorafe si es la primera vez dándole el valor de factura  */
 
     if(localStorage.getItem("factura")>factura){
         factura = parseInt(localStorage.getItem("factura"));
@@ -26,6 +26,8 @@ function inicio(){
     
 }
 
+
+/* Nos pasará el valor de la fila y si es un bocata o bebida. */
 
 
 
@@ -38,11 +40,13 @@ function sumar(num , clase){
     let existe = false;
     let nombre ="";
     let precio = 0;
-
+    /* Caso del bocata*/
     if(clase==1){
         // alert("Ha añadido al carrito un bokata de "+bocatas[num]);
         total = total + precioBocatas[num];
         for(let i=0; i<listaNombre.length;i++){
+
+
             if(listaNombre[i]==bocatas[num]){
                 posicion = i;
                 existe = true;
@@ -50,7 +54,7 @@ function sumar(num , clase){
                 precio = precioBocatas[num];
             }
         }
-
+        /* Miramos si existe para cambiar las unidades o crear una nueva fila*/
         if(existe == true){
             listaCantidad[posicion] = listaCantidad[posicion] + 1;
             cambioFila(nombre,listaCantidad[posicion],precio)
@@ -65,6 +69,7 @@ function sumar(num , clase){
         
         contador = contador + 1;
         carritoVacio();
+        /* Caso de la bebida*/
     }else if(clase==2){
         // alert(bebidas[num]+ " ha sido añadido al carrito.");
         total = total + precioBebidas[num];
@@ -101,6 +106,8 @@ function sumar(num , clase){
 }
 
 function enseñar(num){
+
+    /* Descripciones a enseñar cuando está encima de la imagen*/
     let lista = ["Bonito, anchoas, mahonesa, guindillas y huevo duro.",
     "Huevos rotos, txistorra y jamón.",
     "Tomate, lechuga, mahonesa, esparragos, pollo y pan de semilla.",
@@ -112,17 +119,19 @@ function enseñar(num){
     document.getElementById('a'+num).innerHTML = lista[num]+"<br><br>"+precios[num]+" €";   
 
 }
-
+/* Quitamos la descripción al salir de la imagen */
 function quitar(num){
     document.getElementById('a'+num).innerHTML = "";   
 }
-
+/* Hacer invisible el carrito */
 function cerrarCarrito(){
     document.getElementById("carrito").style.display="none";
     document.getElementById("boton_carro").style.display="block";
 }
 
 function pagar(){
+
+    /*  Aqui creamos una ventana pdf imprimendo la parte que nos interesa en el carrito*/
 
     let frase ="";
 
@@ -136,7 +145,7 @@ function pagar(){
     ventana.document.write('<html><head><title>Nº Factura: '+factura+'</title>');
     
     
-    ventana.document.write('<style type="text/css">  p{font-size: 2vw;} #imprimir1{border: 1vw solid rgb(33, 153, 33); width:40vw; position:relative; left:29vw;} #tit{text-align:center; position:relative; top:-4vw;}body { font-size: 3.5vw; text-align:left;  } #cabec{ text-align:center; position:relative; top:-8vw;  border-bottom: 0.5vw dashed rgb(33, 153, 33);} #cabec p{font-size: 1.8vw;} #tit{font-size: 4.5vw;} #parte2{position:relative; top:-8vw; border-bottom: 0.5vw dashed rgb(33, 153, 33);} #parte2 p{position:relative; left: 2vw;} #parte3{margin-left:1vw;, position:relative; top: -3vw; heigth:5vw;  } #parte3 p{font-size:4vw;}</style>');
+    ventana.document.write('<style type="text/css">  p{font-size: 2vw;} #imprimir1{border: 1vw solid rgb(33, 153, 33); width:40vw; position:relative; left:29vw;} #tit{text-align:center; position:relative; top:-4vw;}body { font-size: 3.5vw; text-align:left;  } #cabec{ text-align:center; position:relative; top:-8vw;  border-bottom: 0.5vw dashed rgb(33, 153, 33);} #cabec p{font-size: 1.8vw;} #tit{font-size: 4.5vw;} #parte2{position:relative; top:-8vw; border-bottom: 0.5vw dashed rgb(33, 153, 33);} #parte2 p{position:relative; left: 2vw;} #parte3{margin-left:1vw;, position:relative; height:5vw; text-align:center; } #parte3 p{font-size:4vw; position: relative; left:2vw; top: -8vw;}</style>');
 
     document.getElementById("cabec").style.display="block";
     
@@ -160,17 +169,14 @@ function pagar(){
 
 }
 
-function cerrarCarrito(){
-    document.getElementById("carrito").style.display="none";
-    document.getElementById("boton_carro").style.display="block";
-}
-
+/* Hacemos visible le carrito e invisble el botón*/
 function abrirCarrito(){
     document.getElementById("carrito").style.display="block";
     document.getElementById("boton_carro").style.display="none";
 
 }
-
+/* Miramos si el carrito está vacio para enseñar el texto avisando de ello.
+En caso contrario se verá la fila */
 function carritoVacio(){
     if(contador>0){
         
@@ -195,7 +201,7 @@ function carritoVacio(){
 
     }
 }
-
+/* Creamos una nueva fila del elementi*/
 function nuevaFila(nombre,precio){
     let frase ="";
     
@@ -210,12 +216,12 @@ function nuevaFila(nombre,precio){
         document.getElementById("total").innerHTML = total+"€";
       
 }
-
+/* Cambios las unidades del elemento*/
 function cambioFila(nombre,num,precio){
     document.getElementById(nombre).innerHTML = "-"+nombre+"  x   "+num+"   x  "+precio+"€    =   "+precio*num+"€";
     document.getElementById("total").innerHTML = total+"€";
 }
-
+/* Actualizamos la página para borrar el carrito */
 function limpiar(){
     location.reload();
 }

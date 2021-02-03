@@ -17,6 +17,8 @@
 
 </head>
 <body onload="inicio()">
+
+    <!-- Cabecera de la página -->
 <div id="cabecera">
 
     <img src="fotos/euskobokata.png" alt="">
@@ -26,6 +28,8 @@
     </div>
 
 </div>
+
+<!-- Parte de los bocadillos, con su descripcion invisible y su botón -->
 
 <div id="bocatas">
 
@@ -51,7 +55,7 @@
     </div>
 
 </div>
-
+<!-- Parte de los bebidas, con su descripcion invisible y su botón -->
 <div id="bebidas">
 
     <p class="titulo">Bebidas</p>
@@ -80,12 +84,17 @@
 </div>
 
 
+<!-- Parte del carrito por defecto invisible -->
+
 
 <input type="image" src="fotos/carrito.png" id="boton_carro" onclick="abrirCarrito()"/>
 
 
+
 <div id="carrito">
     <div id="imprimir">
+
+        <!-- Parte que queremos que se imprima -->
             <div id="imprimir1">
 
                 
@@ -101,7 +110,8 @@
 
 
     </div>
-
+<!-- 
+    Enseña esta parte si el carrito está vacio -->
 
     <div id="vacia">
 
@@ -123,6 +133,8 @@
 </div>
 
     <div id="botones">
+
+        
 
     <div id="pagar" onclick="pagar()">
 
