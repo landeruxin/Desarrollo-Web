@@ -1,0 +1,33 @@
+<!--3.	Crear una galería de imágenes
+a.	Utilizar 5 imágenes
+b.	Cuando se pulse el botón correspondiente la imagen cambia
+ -->
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <script type="text/javascript" src="ejercicio3.js"> </script>
+        <link rel="stylesheet" type="text/css" href="ejercicio3.css">
+         <title>Ejercicio3</title>
+    </head>
+    <body onload="inicio()">
+        <p >3.	Crear una galería de imágenes<br>
+            a.	Utilizar 5 imágenes<br>
+            b.	Cuando se pulse el botón correspondiente la imagen cambia
+            </p>
+
+        <img id="foto" onclick="cambio()">
+
+        <div id="botones">
+
+            <input type="button" value="Anterior" onclick="anterior()">
+
+            <input type="button" value="Siguiente" onclick="siguiente()">
+        </div>
+
+        
+    </body>
+    </html>
