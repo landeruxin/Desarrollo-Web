@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="fotos/icono.ico" type="image/ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="romanos.css">
+    
+    
+    <script type="text/javascript" src="romanos.js"> </script>
+    <title>Conversor Romano</title>
+
+
+</head>
+<body >
+
+<p id="titulo">Conversor de números romanos</p>
+
+<div id="cuerpo">
+
+    <div id="romano">
+
+        <img src="fotos/romano.png" alt="">
+
+        <input type="text" id="numeroRomano">
+
+        <p>Números Romanos</p>
+
+    </div>
+
+    <div id="numero">
+
+            <img src="fotos/numero.png" alt="">
+
+            <input type="number" id="numeroLatino">
+
+            <p>Números latinos</p>
+
+    </div>
+
+
+</div>
+
+<div id="resultado">
+
+<p id="numLat"></p>
+
+<p id="igual"></p>
+
+<p id="numRom"></p>
+
+</div>
+
+<input type="button" id="boton" value="Convertir valor" onclick="calcular()">
+
+<input type="button" id="boton1" value="Vaciar valores" onclick="vaciarTodo()">
+
+
+    
+</body>
+</html>
