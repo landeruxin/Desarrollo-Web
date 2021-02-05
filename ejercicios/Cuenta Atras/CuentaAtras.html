@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="fotos/icono.ico" type="image/ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="CuentaAtras.css">
+    
+    
+    <script type="text/javascript" src="CuentaAtras.js"> </script>
+    <title>Cuenta Atras</title>
+
+
+</head>
+<body >
+
+    <!-- PARTE DONDE SE INTRODUCE EL EVENTO -->
+    
+
+    <p id="titulo">Cuenta atras</p>
+
+    <div id="introduccion">
+        <div class="fila">
+            <p>Introduzca el nombre del evento:</p>
+            <input type="text" id="nombre" placeholder="Nombre evento">
+        </div>
+        <div class="fila">  
+            <p>Introduzca el día del evento:</p>
+            <input type="date" id="fecha"  max="9999-12-31">
+        </div>
+        <div class="fila">
+            <p>Introduzca la  hora del evento:</p>
+            <input type="time" id="hora">
+        </div>
+
+        <input type="button" id="boton" value="Introducir evento" onclick="inicio()">
+
+
+
+        
+    </div>
+<!-- 
+    PARTE DONDE SE MUESTRA EL TEMPORIZADOR -->
+
+    <div id="temporizador">
+    
+
+        <p id="evento"></p>
+
+        <div id="contenedor">
+            <div class="columna"> 
+                <p id="dia"></p>
+                <p class="casilla">días</p>
+            </div>
+            <div class="columna1">
+                <p id="hora1"></p>
+                <p class="casilla">horas</p>
+            </div>
+            <div class="columna">
+                <p id="minuto"></p>
+                <p class="casilla">minutos</p>
+            </div>
+            <div class="columna1">
+                <p id="segundo"></p>
+                <p class="casilla">segundos</p>
+            </div>
+
+
+
+        </div>   
+
+        <input type="button" class="fin" value="Finalizar evento" onclick="finalizar()">
+
+            
+    </div>
+
+    <!-- PARTE DONDE HA FINALIZADO EL CONTADOR  -->
+
+    <div id="terminado">
+
+        <p id="final"></p>
+
+        <input type="button" class="fin" value="Nuevo evento" onclick="finalizar()">
+
+    </div>
+
+<img src="fotos/reloj.png" id="logo" alt="">    
+    
+</body>
+</html>

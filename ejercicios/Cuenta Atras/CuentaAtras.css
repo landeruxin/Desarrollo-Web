@@ -1,0 +1,220 @@
+body{
+    background-color: aliceblue;
+}
+
+#titulo{
+    text-align: center;
+    font-size: 4vw;
+    padding-left:5vw;
+}
+
+#introduccion{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    position: relative;
+    left: 24vw;
+}
+
+#introduccion p{
+    font-size: 2vw;
+    width:27vw;
+}
+
+.fila input{
+    width:22vw;
+    height: 2vw;
+    position: relative;
+    left: 1vw;
+    top: 2.2vw;
+    font-size: 2vw;
+    text-align: center;
+}
+
+
+
+.fila{
+    display: flex;
+}
+
+
+#boton{
+    width:20vw;
+    font-size:2.5vw;
+    position: relative; 
+    left: 15vw;
+    top: 1vw;
+    background-color: rgb(41, 129, 230);
+    color: white
+}
+
+#logo{
+    position: absolute;
+    top: 1vw;
+    left:32.5vw;
+    width:10vw;
+    height: 10vw;
+}
+
+
+#temporizador{
+    display:none;
+    
+}
+
+#contenedor{
+    display: flex;
+    width: 50vw;
+    position: relative;
+    left:24vw;
+    border: 0.3vw rgb(41, 129, 230) solid;
+    background-color: white;
+    
+}
+
+.columna, .columna1{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:12.5vw;
+}
+
+
+.columna p, .columna1 p{
+    font-size: 2.2vw;
+}
+
+#dia, #hora1, #minuto, #segundo{
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
+#evento{
+    text-align: center;
+    font-size: 3vw;
+}
+
+.fin{
+    width:20vw;
+    font-size:2.5vw;
+    position: relative; 
+    left: 39vw;
+    top: 2vw;
+    background-color: rgb(41, 129, 230);
+    color: white
+}
+
+#final{
+    text-align: center;
+    font-size: 5vw;
+    width: 70vw;
+    position: relative;
+    left: 14vw;
+}
+
+#terminado{
+    display:none;
+}
+
+.columna1{
+    background-color:rgba(29, 104, 189, 0.699);
+    color: white;
+}
+
+.columna{
+    background-color: white;
+    color:rgba(29, 104, 189, 0.699); 
+}
+
+.casilla{
+    height: 1vw;
+}
+
+@media (max-width: 800px){
+
+    
+#titulo{
+    font-size: 7vw;
+    padding-left: 20vw;
+}
+
+
+#logo{
+    left:22.5vw;
+    width:20vw;
+    height: 20vw;
+}
+
+#introduccion{
+    width: 90vw;
+    left: 4vw;
+}
+
+#introduccion p{
+    font-size: 4vw;
+    width:55vw;
+}
+
+.fila input{
+    width:34vw;
+    height: 4vw;
+    top: 3.8vw;
+    font-size: 3.4vw;
+}
+
+
+
+#boton{
+    width:50vw;
+    font-size:4vw; 
+    left: 20vw;
+    top: 1vw;
+}
+
+
+#contenedor{
+    width: 90vw;
+    left:4vw;
+    
+}
+.columna1, .columna{
+    
+    width:22.5vw;
+}
+
+.columna p , .columna1 p{
+    font-size: 5vw;
+}
+
+#dia, #hora1, #minuto, #segundo{
+    font-size: 6vw;
+}
+
+#evento{
+    text-align: center;
+    font-size: 5vw;
+}
+
+.fin{
+    width:50vw;
+    font-size:5vw; 
+    left: 24vw;
+    top: 4vw;
+}
+
+#final{
+    text-align: center;
+    font-size: 6vw;
+    width: 90vw;
+    position: relative;
+    left: 4vw;
+    top: 2vw;
+}
+
+#terminado{
+    display:none;
+}
+
+}
