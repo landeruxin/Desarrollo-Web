@@ -1,0 +1,16 @@
+*{ 
+    padding: 0; 
+    margin: 0; 
+    position: relative;
+    top:5vw;
+} 
+
+canvas{ 
+    background:aliceblue; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+body{
+    background-color: black;
+}
