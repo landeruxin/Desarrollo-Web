@@ -1,0 +1,15 @@
+p{
+    text-align: left;
+    width: 20vw;
+    position: relative;
+    left: 39vw;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+#titulo{
+    font-size: 3vw;
+    text-align: center;
+}
