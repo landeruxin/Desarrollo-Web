@@ -1,0 +1,104 @@
+p{
+    text-align: center;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+#titulo{
+    font-size: 4vw;
+}
+
+#contenedor1 p{
+    font-size:2.5vw;
+}
+
+#contenedor1{
+    width:50vw;
+    position: relative;
+    left:24vw;
+}
+
+#boton{
+    width:20vw;
+    font-size:2.5vw;
+    position: relative; 
+    left: 15vw;
+    top: 1vw;
+    background-color: rgb(41, 129, 230);
+    color: white;
+    
+    cursor: pointer;
+}
+
+#boton:disabled{
+    background-color: rgba(41, 129, 230, 0.295);
+    cursor: default;
+}
+
+#botones{
+    font-size: 1.3vw;
+    width: 20vw;
+    position: relative;
+    left: 18vw;
+}
+
+#fila{
+    display: flex;    
+    margin:auto;
+    flex-direction: row;
+}
+
+
+#contenedor2{
+    display:none;
+}
+
+
+.cajon{
+    
+    margin-left:auto;
+    margin-right: auto;
+    width:30vw;
+    height: 50vw;
+    border: 0.4vw blue solid;
+}
+
+.cajon p{
+    font-size: 1.8vw;
+}
+
+.cajon #descripcion1,.cajon #descripcion2,.cajon #descripcion3{
+    width: 28vw;
+    position: relative;
+    left:1vw;
+    text-align: left;
+    font-size: 1.2vw;
+}
+
+.cajon img{
+    width:20vw;
+    height: 25vw;
+    position: absolute;
+    top: 37vw;
+    margin-left: 5vw;
+}
+
+
+
+#boton1{
+    
+    width:20vw;
+    font-size:2.5vw;
+    position: relative; 
+    left: 37vw;
+    top: 2vw;
+    background-color: rgb(41, 129, 230);
+    color: white;
+    
+    cursor: pointer;
+    margin-bottom: 2vw;
+}
+
+

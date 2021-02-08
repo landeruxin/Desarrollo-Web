@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css.css">    
+    <script type="text/javascript" src="javascript.js"> </script>
+    
+    <title>Ejercicio 3.5</title>
+
+
+</head>
+<body onload="inicio()">
+
+    <p id="titulo">Mejores películas del año</p>
+
+    <div id="contenedor1">
+
+        <p>Debe de escoger 3 películas:</p>
+
+        <div id="botones">
+
+        </div>
+        <input type="button" value="Ver detalles" onclick="mostrar()" id="boton" disabled >
+    </div>
+
+    <div id="contenedor2">
+
+        <div id="fila">
+
+        <div class="cajon">
+            <p id="titulo1"></p>
+            <p id="descripcion1"></p>
+            <img id="imagen1" src="" alt="">
+        </div>
+
+        <div class="cajon">        
+            <p id="titulo2"></p>
+            <p id="descripcion2"></p>
+            <img id="imagen2" src="" alt="">
+         </div>
+
+        <div class="cajon">
+            <p id="titulo3"></p>
+            <p id="descripcion3"></p>
+            <img id="imagen3" src="" alt="">
+        </div>
+
+    </div>
+
+        <input type="button" value="Volver al inicio" onclick="volver()" id="boton1"  >
+
+    </div>
+    
+</body>
+</html>
