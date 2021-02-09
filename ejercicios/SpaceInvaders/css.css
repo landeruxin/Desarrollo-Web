@@ -2,7 +2,7 @@
     padding: 0; 
     margin: 0; 
     position: relative;
-    top:5vw;
+    top:2vw;
 } 
 
 canvas{ 
@@ -12,5 +12,45 @@ canvas{
 }
 
 body{
-    background-color: black;
+    background-image: url("fotos/fondo.jpg");
+}
+
+#sonido{
+    display: none;
+    
+}
+
+#ovni{
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    left: -10vw;
+    top: -6vw;
+    
+  animation-name: movimiento;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+#galeria li {
+	width: 100%;
+	list-style: none;
+}
+
+#galeria img {
+	width: 100%;
+}
+
+@keyframes movimiento {
+    0%   {left:-10vw; top:-6vw;}
+    
+    40%  {left:85vw; top:-6vw;}
+
+    60%  {left:85vw; top:34vw;}
+
+    100%  {left:-10vw; top:34vw;}
 }
