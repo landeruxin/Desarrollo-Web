@@ -1,0 +1,56 @@
+p{
+    
+    text-align: center;
+}
+body{
+    background-color: aliceblue;
+}
+
+#titulo{
+    font-size: 3vw;
+    text-align: center;
+}
+
+#contenedor{
+    display: flex;
+    width: 80vw;
+    position: relative;
+    left: 9vw;
+}
+
+.elemento{
+    margin: auto;
+    width: 50vw;
+}
+
+.elemento p{
+    text-align: center;
+    font-size: 2vw;
+    
+}
+
+#google{    
+    width: 19vw;
+    height: 7vw ;
+    position: relative;
+    left: 10.5vw;
+    cursor: pointer;
+}
+
+#ventana{
+    width: 9.5vw;
+    height: 7vw ;
+    
+    position: relative;
+    left: 15.25vw;
+    cursor: pointer;
+}
+
+#prueba{
+    text-align: center;
+    font-size: 2vw;
+}
+
+
+
+
