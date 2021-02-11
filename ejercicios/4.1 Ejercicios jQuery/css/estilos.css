@@ -1,0 +1,26 @@
+img{
+    width: 33%;
+}
+
+p, h1, a{
+    text-align: center;
+}
+
+a, button{
+    width: 10vw;
+    position: relative;
+    left: 44vw;
+    text-align: center;
+}
+
+#a1, #a2{
+    left: 46.5vw;
+}
+
+img{
+    width: 30vw;
+    height: auto;
+    position: relative;
+    left: 34vw;
+    top: 1vw;
+}
