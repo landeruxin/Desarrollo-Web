@@ -1,0 +1,99 @@
+#cabecera{
+    width:100%;
+    background-color: aliceblue;
+    position: fixed;
+    height: 6vw;
+    top:0vw;
+    z-index: 3;
+}
+
+#logo{
+    width:12vw;
+    height: 12vw;
+    position: relative;
+    left: 15vw;
+    top:-3vw;
+    cursor: pointer;
+}
+
+#enlaces{
+    display: flex;
+    width: 34vw;
+    position: relative;
+    left:60vw;
+    top:-10vw;
+
+}
+
+.enlace{
+    color: gray;
+    margin: auto;
+    font-size: 1.5vw;
+}
+
+.enlace:hover{
+    transform: scale(1.1);
+    color:rgb(177, 177, 44);
+}
+
+
+
+#gruas{
+    width:100%;
+    height: auto;
+    position:absolute;
+    top:5vw;
+    z-index: 0;
+}
+
+#container1 p{
+    font-size:4vw;
+    color:white;
+    z-index: 1; 
+    width: 60%;
+    position: relative;
+    top: 10vw;
+    left:20%;
+    text-align: center;
+}
+
+span{
+    font-size:4.5vw;
+    font-weight: bold; 
+}
+
+#container2{
+    background-color: aliceblue;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 28vw;
+    height: 18vw;
+}
+#parte1{
+    width: 30%;
+}
+
+#oficina{
+    width:20vw;
+    height: 14vw;
+    position: relative;
+    left: 8vw;
+    top:2vw;
+}
+
+#parte2{
+    width: 70%;
+}
+ #parte2 p{
+     margin-right: 10%;
+     margin-left:5vw;
+ }
+
+ .titulo{
+     margin-top: 2vw;
+     text-align: center;
+ }
+
+
