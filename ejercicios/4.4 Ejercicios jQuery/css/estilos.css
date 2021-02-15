@@ -1,0 +1,141 @@
+#container{
+    display: flex;
+    width: 80%;
+    position: relative;
+    left:10%;
+    top: 1vw;
+}
+
+#div1{
+    width: 200px;
+    height: 200px;
+    margin:auto;
+    background-color: red; 
+}
+
+#div2{
+    width: 200px;
+    height: 200px;
+    margin:auto;
+    background-color: blue; 
+}
+
+#div3{
+    width: 200px;
+    height: 200px;
+    margin:auto;
+    background-color: green; 
+}
+
+#botones, #imagenes{
+    position: relative;
+    top: 3vw;
+    display: flex;
+}
+
+
+#botones button{
+    margin: auto;
+}
+
+#imagenes img{
+    position: relative;
+    top: 1vw;
+    margin: auto;
+    width: 30vw;
+    height: auto;
+    opacity: 0.5;
+}
+
+#acordeon , #acordeon1{
+    width: 100%;
+    display: flex;
+}
+
+#acordeonº{
+    position: relative;
+    top:2vw;
+}
+
+#acordeon img, #acordeon1 img{
+    width: 15vw;
+    position: relative;
+    left: -9vw;
+    top: -4vw;
+    display: none;
+}
+
+#acordeon h2, #acordeon1 h2{
+    text-align: center;
+    cursor: pointer;
+}
+#acordeon p, #acordeon1 p{
+    width: 15vw;
+    position: relative;
+    left: 7vw;
+    top:-13vw;
+    background-color: blueviolet;
+    color: aliceblue;
+    display: none;
+}
+
+#acordeon div , #acordeon1 div{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:4vw;
+}
+
+#cuadrado, #cuadrado1{
+
+    width: 5.051vw;
+    height: 5.051vw;
+    background-color: yellow;
+    position: relative;
+    top:5vw;
+    left: 48vw; 
+}
+
+#cuadrado1{
+    
+    background-color: blue;
+    top:8vw;
+}
+
+#botones1, #botones2{
+    display: flex;
+}
+
+#botones1 button,#botones2 button{
+    position: relative;
+    top:5vw;
+    margin: auto;
+    width: 15vw;
+    font-size: 1.5vw;
+}
+
+
+#tit{
+    
+    width: 50%;
+    opacity: 0.2;
+    font-size: 0.2em;
+    text-align: center;
+
+}
+
+#icono{
+    width: 5vw;
+    position: absolute;
+    left: 10.5vw;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+ul{
+    font-size: 1vw;
+    margin-left: 100vw;
+    z-index: 999;
+}
