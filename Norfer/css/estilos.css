@@ -70,30 +70,93 @@ span{
     position: relative;
     top: 28vw;
     height: 18vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 #parte1{
-    width: 30%;
+    width: 40%;
 }
 
 #oficina{
     width:20vw;
     height: 14vw;
     position: relative;
-    left: 8vw;
+    left: 20vw;
     top:2vw;
 }
 
 #parte2{
-    width: 70%;
+    width: 60%;
 }
  #parte2 p{
      margin-right: 10%;
      margin-left:5vw;
+     width: 40vw;
  }
 
  .titulo{
      margin-top: 2vw;
-     text-align: center;
+     text-align: left;
+     font-size: 2vw;
+     
+    color:rgb(177, 177, 44);
  }
 
+ .subtitulo{
+     font-size: 1.2vw;
+ }
+
+ #container3{
+    background-color: rgba(233, 233, 102, 0.801);
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 28vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#container3 p{
+    text-align: center;
+}
+
+
+#titServicio{
+    font-size: 3vw;
+    text-align: center;
+    width:100%;
+}
+
+#fila{
+    width:80vw;
+    position: relative;
+    left: 9vw;
+    display: flex;
+
+}
+
+#fila p{
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.elemento{
+    width: 20vw;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.elemento img{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    position: relative;
+    left: 5vw;
+}
+
+.elemento:hover{
+    transform: scale(1.2);
+}
 
