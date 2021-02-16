@@ -5,7 +5,7 @@
     height: 6vw;
     top:0vw;
     z-index: 3;
-    border-bottom: 0.4vw solid rgb(177, 177, 44);;
+    border-bottom: 0.4vw solid rgb(177, 177, 44);
 }
 
 #logo{
@@ -129,7 +129,6 @@ span{
     font-size: 3vw;
     text-align: center;
     width:100%;
-    text-align: center;
 }
 
 #fila{
@@ -272,6 +271,8 @@ iframe{
     cursor: pointer;
 }
 
+
+
 .dato p:hover{
     font-weight: bold;
     color: white;
@@ -301,4 +302,273 @@ iframe{
     position: relative;
     top:28vw;
 }
+@media (max-width:1000px){
+    #cabecera{
+        height: 8vw;
+    }
+    
+    #logo{
+        width:14vw;
+        height: 14vw;
+    }
+    
+    #enlaces{
+        width: 36vw;
+        left:58vw;
+        top:-11vw;
+    
+    }
+    
+    .enlace{
+        font-size: 1.8vw;
+    }
+
+    .tit{
+        font-size: 3.5vw;
+    }
+
+    
+
+    
+    #oficina{
+        width:25vw;
+        height: 18vw;
+        position: relative;
+        left: 15vw;
+        top:2vw;
+    }
+
+    #parte2 p{
+        width: 50vw;
+    }
+
+    .titulo{
+        font-size: 3vw;
+    }
+    .subtitulo{
+        font-size: 1.5vw;
+    }
+    
+    #fila{
+        width:90vw;
+        left: 4.5vw;
+
+    }
+
+    #fila p{
+        font-size: 2vw;
+    }
+
+    .elemento{
+        width: 22.5vw;
+    }
+
+    .elemento img{
+        width: 15vw;
+        height: 15vw;
+        left: 3.75vw;
+    }
+    .item{
+        width: 25vw;
+        font-size: 2vw;
+    }
+    
+    .item p{
+        top:2vw;
+    }
+    
+    #tabla{
+        width: 80vw;
+        left:9vw;
+    }
+    
+    .item img{
+        width: 25vw;
+        height: 15vw;
+    }
+
+    #contacto{
+        width: 80vw;
+        left:9vw;
+    }
+
+            
+    #mapa{
+        width: 40vw;
+    }
+
+    #datos{
+        width: 45vw;
+
+        height: 30vw;
+    }
+
+    iframe{
+        width: 100%;
+        height: 30vw;
+    }
+
+    
+    .dato p{
+        font-size: 2vw;
+        top: -1.5vw;
+        left: 4vw;
+    }
+
+    .dato img{
+        width: 3vw;
+        height: 3vw;
+    }
+
+    #pie{
+        font-size: 2vw;
+    }.ancla{
+        bottom: 6vw;
+    }
+
+    #ancla1{
+        top:-6vw;
+    }
+}
+
+
+@media (max-width:600px){
+    #cabecera{
+        height: 10vw;
+    }
+    
+    #logo{
+        width:16vw;
+        height: 16vw;
+    }
+    
+    #enlaces{
+        width: 50vw;
+        left:44vw;
+        top:-13vw;
+    
+    }
+    
+    .enlace{
+        font-size: 2.5vw;
+    }
+
+    .tit{
+        font-size: 5vw;
+    }
+
+    
+
+    
+    #oficina{
+        width:34vw;
+        height: 25vw;
+        left: 6vw;
+    }
+
+    #parte2 p{
+        width: 55vw;
+    }
+
+    .titulo{
+        font-size: 3.5vw;
+    }
+    .subtitulo{
+        font-size: 2vw;
+    }
+    
+    #fila{
+        width:96vw;
+        left: 2vw;
+        display: grid;
+        grid-template-columns: 2 auto auto;
+
+    }
+
+    #fila p{
+        font-size: 3vw;
+    }
+
+    .elemento{
+        width: 45vw;
+        margin-bottom: 4vw;
+    }
+
+    .elemento img{
+        width: 40vw;
+        height: 40vw;
+    }
+    #tabla{
+        grid-template-columns: 45vw 45vw;
+        left: 4.5vw;
+    }
+
+    .item{
+        width: 44vw;
+        font-size: 3.5vw;
+    }
+    
+    .item p{
+        top:3vw;
+    }
+    
+    #tabla{
+        width: 90vw;
+        left:4.5vw;
+    }
+    
+    .item img{
+        width: 44vw;
+        height: 30vw;
+    }
+
+    #contacto{
+        width: 80vw;
+        left:9vw;
+        flex-direction:column; 
+    }
+
+            
+    #mapa{
+        width: 80vw;
+    }
+
+    #datos{
+        width: 68vw;
+        position: relative;
+        left:6vw;
+    }
+
+    iframe{
+        width: 100%;
+        height: 30vw;
+    }
+
+    
+    .dato p{
+        font-size: 3vw;
+        top: -2.5vw;
+        left: 6vw;
+    }
+
+    .dato img{
+        width: 4vw;
+        height: 4vw;
+    }
+
+    #pie{
+        font-size: 3vw;
+    } 
+    
+    .ancla{
+        bottom: 8vw;
+    }
+
+    #ancla1{
+        top:-8vw;
+    }
+}
+
+
+
 
