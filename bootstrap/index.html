@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.minpulse.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Hola Bootstrap</title>
+  </head>
+  <body>
+      <!-- Contenedor principal para todo el body -->
+      <div class="container-fluid">
+          <!-- Barra de navegación -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navegación</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Artículos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nosotros</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <!-- Fin barra de navegación -->
+              <!-- Carrusel -->
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/Chrysanthemum.jpg" class="d-block w-100" alt="Crisantemo">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/Desert.jpg" class="d-block w-100" alt="Desierto">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/Hydrangeas.jpg" class="d-block w-100" alt="Hortensias">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              <!-- Fin Carrusel -->
+              <!-- seccion articulos -->
+              <section id="accesibilidad" >
+                <div class="bg-dark p-3 d-flex justify-content-center">
+                        <h1 class="m-3">Accesibilidad</h1>
+                </div>  
+                
+                  <!-- galeria de articulos -->
+                  <div class="row d-flex justify-content-center">
+                      <div class="col col-sm-12 col-md-6 col-xl-3">
+                            <div class="card" style="width: 18rem;">
+                                    <img src="img/cafe.jpg" class="card-img-top" alt="café">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Café</h5>
+                                      <p class="card-text">Rico café con espuma en forma de corazón</p>
+                                      <!-- <a href="#" class="btn btn-outline-success">Pedir uno</a> -->
+                                      <button type="button" class="btn btn-outline-success" data-bs-toggle="tooltip" data-bs-placement="top" title="Pedir un café">
+                                            Pedir un café
+                                          </button>
+                                    </div>
+                            </div>
+                      </div>
+
+                      <div class="col col-sm-12 col-md-6 col-xl-3">
+                            <div class="card" style="width: 18rem;">
+                                    <img src="img/cafe.jpg" class="card-img-top" alt="café">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Café</h5>
+                                      <p class="card-text">Rico café con espuma en forma de corazón</p>
+                                      <a href="#" class="btn btn-success">Pedir uno</a>
+                                    </div>
+                            </div>
+                      </div>
+
+                      <div class="col col-sm-12 col-md-6 col-xl-3">
+                            <div class="card" style="width: 18rem;">
+                                    <img src="img/cafe.jpg" class="card-img-top" alt="café">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Café</h5>
+                                      <p class="card-text">Rico café con espuma en forma de corazón</p>
+                                      <a href="#" class="btn btn-dark">Pedir uno</a>
+                                    </div>
+                            </div>
+                      </div>
+
+                      <div class="col col-sm-12 col-md-6 col-xl-3">
+                            <div class="card" style="width: 18rem;">
+                                    <img src="img/cafe.jpg" class="card-img-top" alt="café">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Café</h5>
+                                      <p class="card-text">Rico café con espuma en forma de corazón</p>
+                                      <a href="#" class="btn btn-primary">Pedir uno</a>
+                                    </div>
+                            </div>
+                      </div> 
+                  </div>
+                  
+                  <!-- fin galeria de articulos -->
+              </section>
+              <!-- fin seccion articulos -->
+              <!-- dos columnas -->
+              <section>
+                <div class="row align-items-center">
+                    <div class="col col-4">
+                        <img src="img/hamburguesa.jpg" alt="hamburguesa" class="img-fluid">
+                    </div>
+                    <div class="col col-8">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum itaque velit non harum doloribus! Dolore dolorum, ullam eaque vitae fugit rerum optio, in sapiente dolores nihil quos magnam, reprehenderit culpa?</p>
+                    </div>
+                </div>
+            </section>
+              <!-- fin dos columnas -->
+                          <!-- dos columnas -->
+                          <section>
+                                <div class="row align-items-center justify-content-end">
+                                    
+                                    <div class="col col-6">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum itaque velit non harum doloribus! Dolore dolorum, ullam eaque vitae fugit rerum optio, in sapiente dolores nihil quos magnam, reprehenderit culpa?</p>
+                                    </div>
+                                    <div class="col col-2">
+                                            <img src="img/hamburguesa.jpg" alt="hamburguesa" class="img-fluid">
+                                        </div>
+                                </div>
+                            </section>
+                              <!-- fin dos columnas -->
+
+        <!-- Formulario -->
+        <div class="bg-light p-3 d-flex justify-content-center">
+                <h1 class="m-3">Contacto</h1>
+        </div> 
+        <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Dirección de correo</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Nunca compartas tu correo con nadie.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Acepto privacidad</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+        <!-- Fin formulario -->
+        <!-- Ventana modal -->
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Abrir ventana modal
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Mi ventana modal</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/postre.jpg" alt="postre" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- fin ventana modal -->
+      </div>
+
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
