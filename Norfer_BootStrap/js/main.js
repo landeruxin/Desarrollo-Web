@@ -1,5 +1,11 @@
 jQuery(document).ready(function( $ ) {
 
+		$("#tit").slideDown(1500);
+		$("#headerwrap").animate({
+			opacity : 1
+		}, 2000
+		);
+
 		// Menu settings
 		$('#menuToggle, .menu-close').on('click', function(){
 			$('#menuToggle').toggleClass('active');
