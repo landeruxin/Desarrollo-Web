@@ -309,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Separator About - Parallax Section */
 .sep {
 	background-attachment: fixed;
-	background-position: 60% 0;
+	background-position: 70% 0;
 	background-repeat: no-repeat;
 	height: 450px;
 	position: relative;
@@ -617,4 +617,10 @@ iframe{
 		height: 40vw;
 	}
 	
+}
+
+@media (min-width:1900px){
+	#imagen{
+		width:80%;
+	}
 }
