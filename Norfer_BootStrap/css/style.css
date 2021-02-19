@@ -29,6 +29,15 @@ textarea {
     text-shadow: none;
 }
 
+#viga{
+	position: fixed;
+	top: 0vw;
+	left: 1vw;
+	width:15vw;
+	height: 11vw;
+	z-index: -1;
+}
+
 /*
  * A better looking default horizontal rule
  */
@@ -53,6 +62,7 @@ textarea {
 
 html,
 body {
+	z-index:1;
     height: 100%;
 }
 
@@ -254,7 +264,6 @@ h1, h2, h3, h4, h5, h6 {
     -moz-background-size: cover;
     -o-background-size: cover;
 	background-size: cover;
-	opacity: 0.4;
 }
 
 #headerwrap h1 {
@@ -314,10 +323,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Separator About - Parallax Section */
 .sep {
 	background-attachment: fixed;
-	background-position: 70% 0;
+	background-position: 50% 0;
 	background-repeat: no-repeat;
 	height: 450px;
-	position: relative;
+	position: relative; 
 }
 .about {
 	background-image: url(../img/fotos/obra_grua.jpg);
@@ -355,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #portfoliowrap .proc:hover {
 	background-color: #eee;
-	border-bottom: solid 2px #2f2f2f
+	border-bottom: solid 2px #2f2f2f;
 }
 
 .portfolio {
@@ -535,8 +544,23 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom:2vw; 
 }
 
-#direccion, #telefono{
+#direccion, #telefono, #correo{
 	cursor: pointer;
+}
+
+#direccion:hover{
+	color: yellowgreen;
+	font-weight: bold;
+}
+
+#telefono:hover{
+	color: yellowgreen;
+	font-weight: bold;
+}
+
+#correo:hover{
+	color: yellowgreen;
+	font-weight: bold;
 }
 
 .texto{
@@ -550,6 +574,10 @@ iframe{
 	width:100%;
 	height: 25vw;
 	margin: auto;
+}
+
+#contactanos {
+	font-size: 2vw;
 }
 
 @media (max-width: 1200px){
@@ -569,6 +597,14 @@ iframe{
 		font-size: 1.85vw;
 	}
 
+	#contactanos {
+		font-size: 4vw;
+	}
+	
+	#viga{
+		display: none;
+	}
+
 
 }
 
@@ -586,10 +622,6 @@ iframe{
 	.texto{
 		font-size: 3vw;
 	}
-
-	/* #imagen{
-		display: none;
-	} */
 
 
 }
@@ -622,10 +654,4 @@ iframe{
 		height: 40vw;
 	}
 	
-}
-
-@media (min-width:1900px){
-	#imagen{
-		width:80%;
-	}
 }

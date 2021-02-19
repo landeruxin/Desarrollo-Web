@@ -1,11 +1,9 @@
 jQuery(document).ready(function( $ ) {
 
 		$("#tit").slideDown(1500);
-		$("#headerwrap").animate({
-			opacity : 1
-		}, 2000
-		);
+		
 
+		
 		// Menu settings
 		$('#menuToggle, .menu-close').on('click', function(){
 			$('#menuToggle').toggleClass('active');
@@ -45,11 +43,15 @@ jQuery(document).ready(function( $ ) {
 	 $("#direccion").click((e)=>{
 		window.open("https://www.google.com/maps/place/Norfer+Ingenieros/@43.3025158,-2.0117478,15z/data=!4m5!3m4!1s0x0:0xbcc094fbe096da82!8m2!3d43.3025158!4d-2.0117478", "_blank");
 
-   });
+  	 });
 
-   $("#telefono").click((e)=>{
-	   window.location.href = "tel:943311335";
-   });
+	$("#telefono").click((e)=>{
+		window.location.href = "tel:943311335";
+	});
+
+	$("#correo").click((e)=>{
+		window.location.href = "mailto:estudio@norferingenieros.com";
+	});
 
 
 
