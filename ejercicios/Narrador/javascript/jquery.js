@@ -47,7 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
   $boton.addEventListener("click", () => {
     let textoAEscuchar = $mensaje.value;
     //Miramos que haya introducido el texto
-    if (!textoAEscuchar) return alert("Debes de escribir algo.");
+    if (!textoAEscuchar) {
+      alert("Debes de escribir algo.");
+      
+    } else{
+      
     //Creamos el objeto
     let mensaje = new SpeechSynthesisUtterance();
     //Elegimos la voz que ha escogido
@@ -62,6 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
     mensaje.pitch = 1;
     // A hablar!!
     speechSynthesis.speak(mensaje);
+
+    }
   });
      
     
