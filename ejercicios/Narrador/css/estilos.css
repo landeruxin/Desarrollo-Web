@@ -1,0 +1,42 @@
+#container{
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+p{
+    font-size: 2vw;
+}
+
+#tit{
+    font-size: 4vw;
+    text-align: center;
+    margin-top:1vw; 
+
+}
+
+select, textarea{
+    width: 100%;
+    font-size: 2vw;
+}
+
+#boton{
+    cursor: pointer;
+    width: 15vw;
+    height: 15vw;
+    position: relative;
+    left: 32.5vw;
+    top: 1vw;
+}
+
+#narrador{
+   width: 9vw;
+   height: 12; 
+   position: fixed;
+   top:1vw;
+   left: 58vw;
+}
