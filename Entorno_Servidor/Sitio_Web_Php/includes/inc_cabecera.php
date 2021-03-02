@@ -1,7 +1,8 @@
 <!-- Menu Navegacion -->
 
-<nav class="nav">
+<nav class="nav">    
     <div class="container">
+
         <div class="logo">
             <a href="index.php">NORFER</a>
         </div>
@@ -15,4 +16,5 @@
             </ul>
         </div>
     </div>
+    <img src="./fotos/menu.png" alt="icono_menu" id="menu" class="prueba">
 </nav>

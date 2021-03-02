@@ -1,4 +1,5 @@
 <form id="prueba" action="respuestas.php" method="post">
+  <p class="tit">Contacto1</p>
   <p>Nombre: <input type="text" name="nombre" size="40"></p>
   <br>
   <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
@@ -25,7 +26,9 @@
 
   <p>
   <br>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Borrar">
+  <div id="botones">
+    <input type="submit" value="Enviar"  class="boton">
+    <input type="reset" value="Borrar"  class="boton" id="rojo">
+    </div>
   </p>
 </form>

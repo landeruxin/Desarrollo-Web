@@ -45,11 +45,20 @@ function validarTelefono($numero){
             if($nombre == ""){  /* QUE NO ESTÉ VACIO */          
                 $nombreError='<span class="error"><br>Nombre vacio</span>';$verformulario='SI';
             }
-            if (!filter_var($mail,FILTER_VALIDATE_EMAIL))
-            {$mailError='<span class="error"><br>Email Incorrecto</span>';$verformulario='SI';}
 
-            if(validarTelefono($telefono)==0){            
-                $telefonoError='<span class="error"><br>Teléfono Incorrecto<br>Debe de comenzar por 9, 8 7 0 6<br>y debe de ser de 9 dígitos</span>';$verformulario='SI';
+            if($mail != ""){  /* QUE NO ESTÉ VACIO */          
+                if (!filter_var($mail,FILTER_VALIDATE_EMAIL))
+                {$mailError='<span class="error"><br>Email Incorrecto</span>';$verformulario='SI';}
+            }else{
+                $mailError='<span class="error"><br>Email vacio</span>';$verformulario='SI';
+            }
+
+            if($telefono!=""){
+                if(validarTelefono($telefono)==0){     /*el método preg_match devuelve 1 si cumple la condición y 0 o false si no la cumple*/       
+                    $telefonoError='<span class="error"><br>Teléfono Incorrecto:<br>&nbsp;&nbsp;&nbsp;-Debe de comenzar por 9, 8 7 0 6<br>&nbsp;&nbsp;&nbsp;-Debe de ser de 9 dígitos</span>';$verformulario='SI';
+                }
+            }else{
+                $telefonoError='<span class="error"><br>Teléfono vacio</span>';$verformulario='SI';
             }
 
         } else {
@@ -62,23 +71,27 @@ function validarTelefono($numero){
 
         if ($verformulario=='SI'){?>
             <form name="formcontacto" action="" method="POST">
+            <p class="tit">Contacto2</p>
                 <p>Nombre: 
                 <input name="nombre" id="nombre" type="text" value="<?php echo $nombre;?>" />
                 <?php echo $nombreError; ?>
                 </p>
+                <br>
                 <p>Teléfono:
                 <input name="telefono" id="telefono" type="text" value="<?php echo $telefono;?>" />
                 <?php echo $telefonoError; ?>
                 </p>
+                <br>
                 <p>Correo electrónico
                 <input name="mail" id="mail" type="text" value="<?php echo $mail;?>" />
                 <?php echo $mailError; ?>
                 </p>
-                <p><input type="submit"  value="enviar" /></p>
+                <br>
+                <p><input type="submit"  value="Enviar" class="boton" /></p>
             </form>
         <?php 
         } else {
-            echo "<p id='respuesta'>Envio Ok </p>";
+            echo "<p id='respuesta'>Los datos se han enviado correctamente. </p>";
         }
         ?>
 </div>

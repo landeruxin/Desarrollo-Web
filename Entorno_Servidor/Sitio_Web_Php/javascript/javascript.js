@@ -1,6 +1,7 @@
 (function ($) {
     "use strict";
 
+    
 
     /*==================================================================
     [ Focus Contact2 ]*/
@@ -72,4 +73,12 @@
         $(thisAlert).removeClass('alert-validate');
     }
 
+    $("#menu").click((e)=>{
+        $('.nav div.main_list').toggle();
+        
+    });
+
+
+
 })(jQuery);
+
